@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import CanvasRig from "@/components/webgl/CanvasRig";
+import SmoothScroll from "@/components/dom/SmoothScroll";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,14 +27,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {/* HTML UI Layer */}
-        <main className="relative z-10 w-full">{children}</main>
+        <SmoothScroll>
+          {/* HTML UI Layer */}
+          <main className="relative z-10 w-full">{children}</main>
 
-        {/* WebGL Canvas Layer (Fixed to background) */}
-        <div className="fixed inset-0 z-0 pointer-events-none">
-          <CanvasRig>{null}</CanvasRig>
-        </div>
+          {/* WebGL Canvas Layer (Fixed to background) */}
+          <div className="fixed inset-0 z-0 pointer-events-none">
+            <CanvasRig>{null}</CanvasRig>
+          </div>
+        </SmoothScroll>
       </body>
     </html>
   );
 }
+

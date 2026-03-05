@@ -163,3 +163,822 @@ Import traces:
 [01:59:07.847] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
 [02:01:55.775] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [02:01:56.415] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[02:13:05.378] Server  LOG     ✓ Compiled in 847ms
+[02:13:10.053] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:13:10.689] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[02:16:39.031] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.044] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.088] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.089] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.132] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.133] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.134] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.135] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.149] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.150] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.151] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.156] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.165] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.191] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.192] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.195] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.196] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.199] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.204] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.211] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.212] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.213] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.214] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.214] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.224] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.226] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.226] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.229] Server  ERROR   ⨯ ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:16:39.254] Server  LOG     ✓ Compiled in 3.4s
+[02:16:49.414] Browser ERROR   ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[02:20:00.191] Browser ERROR   ./src/components/dom/SmoothScroll.tsx:3:1
+Module not found: Can't resolve '@studio-freight/react-lenis'
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/react-lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[02:20:07.146] Server  LOG     ✓ Compiled in 729ms
+[02:20:14.598] Browser ERROR   ./src/components/dom/SmoothScroll.tsx:3:1
+Export ReactLenis doesn't exist in target module
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+The export ReactLenis was not found in module [project]/node_modules/@studio-freight/lenis/dist/lenis.mjs [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+[02:20:14.598] Browser ERROR   ./src/components/dom/SmoothScroll.tsx:3:1
+Export ReactLenis doesn't exist in target module
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+The export ReactLenis was not found in module [project]/node_modules/@studio-freight/lenis/dist/lenis.mjs [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+[02:20:22.581] Server  LOG     ✓ Compiled in 72ms
+[02:20:22.883] Browser ERROR   ./src/components/dom/SmoothScroll.tsx:16:11
+Parsing ecmascript source code failed
+  14 |         >
+  15 |             {children}
+> 16 |         </Lenis>
+     |           ^^^^^
+  17 |     )
+  18 | }
+  19 |
+
+Expected corresponding JSX closing tag for <ReactLenis>
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+[02:20:22.883] Browser ERROR   ./src/components/dom/SmoothScroll.tsx:3:1
+Export ReactLenis doesn't exist in target module
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/lenis/react'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+The export ReactLenis was not found in module [project]/node_modules/@studio-freight/lenis/dist/lenis.mjs [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+[02:20:22.883] Browser ERROR   ./src/components/dom/SmoothScroll.tsx:3:1
+Export ReactLenis doesn't exist in target module
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/lenis/react'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+The export ReactLenis was not found in module [project]/node_modules/@studio-freight/lenis/dist/lenis.mjs [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+[02:20:47.932] Browser ERROR   ./src/components/dom/SmoothScroll.tsx:17:11
+Parsing ecmascript source code failed
+  15 |         >
+  16 |             {children}
+> 17 |         </ReactLeniss>
+     |           ^^^^^^^^^^^
+  18 |     )
+  19 | }
+  20 |
+
+Expected corresponding JSX closing tag for <ReactLenis>
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+[02:20:47.932] Browser ERROR   ./src/components/dom/SmoothScroll.tsx:3:1
+Export ReactLenis doesn't exist in target module
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Lenis from 'lenis'
+  5 |
+  6 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+
+The export ReactLenis was not found in module [project]/node_modules/@studio-freight/lenis/dist/lenis.mjs [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+[02:20:47.932] Browser ERROR   ./src/components/dom/SmoothScroll.tsx:3:1
+Export ReactLenis doesn't exist in target module
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Lenis from 'lenis'
+  5 |
+  6 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+
+The export ReactLenis was not found in module [project]/node_modules/@studio-freight/lenis/dist/lenis.mjs [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+[02:20:56.856] Server  LOG     ✓ Compiled in 51ms
+[02:20:57.787] Browser ERROR   ./src/components/dom/SmoothScroll.tsx:3:1
+Export ReactLenis doesn't exist in target module
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Lenis from 'lenis'
+  5 |
+  6 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+
+The export ReactLenis was not found in module [project]/node_modules/@studio-freight/lenis/dist/lenis.mjs [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+[02:20:57.787] Browser ERROR   ./src/components/dom/SmoothScroll.tsx:3:1
+Export ReactLenis doesn't exist in target module
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Lenis from 'lenis'
+  5 |
+  6 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+
+The export ReactLenis was not found in module [project]/node_modules/@studio-freight/lenis/dist/lenis.mjs [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+[02:21:10.286] Server  LOG     ✓ Compiled in 42ms
+[02:21:11.244] Browser ERROR   ./src/components/dom/SmoothScroll.tsx:3:1
+Export ReactLenis doesn't exist in target module
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+The export ReactLenis was not found in module [project]/node_modules/@studio-freight/lenis/dist/lenis.mjs [app-client] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+[02:21:11.244] Browser ERROR   ./src/components/dom/SmoothScroll.tsx:3:1
+Export ReactLenis doesn't exist in target module
+  1 | 'use client'
+  2 |
+> 3 | import { ReactLenis } from '@studio-freight/lenis'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  6 |     return (
+
+The export ReactLenis was not found in module [project]/node_modules/@studio-freight/lenis/dist/lenis.mjs [app-ssr] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/dom/SmoothScroll.tsx
+    ./src/app/layout.tsx
+[02:21:44.647] Server  LOG     ✓ Compiled in 564ms
+[02:21:51.300] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:21:51.816] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[02:22:57.976] Server  LOG     ✓ Compiled in 1148ms
+[02:23:00.583] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:23:02.795] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[02:23:18.610] Server  LOG     ✓ Finished filesystem cache database compaction in 13.6s
