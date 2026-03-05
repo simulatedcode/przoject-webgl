@@ -1,8 +1,18 @@
 import { useGLTF, Text, Environment, Grid, ContactShadows } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
+import { useRef } from 'react'
 import * as THREE from 'three'
+import { useWebGLStore } from '../../../store/useWebGLStore'
+import { lerp } from '../../../lib/math'
 
 export default function HeroScene() {
     const { scene } = useGLTF('/models/helas.glb')
+    const groupRef = useRef<THREE.Group>(null)
+    const gridRef = useRef<any>(null)
+
+    // Stage thresholds (0.0 - 1.0)
+    const FADE_START = 0.7
+    const FADE_END = 1.0
 
     // Adjust material properties on the model if needed
     scene.traverse((child) => {
@@ -12,9 +22,31 @@ export default function HeroScene() {
         }
     })
 
+    useFrame(() => {
+        if (!groupRef.current || !gridRef.current) return
+
+        // 1. Fetch scroll progress directly from the non-reactive WebGL store
+        const scroll = useWebGLStore.getState().scrollProgress
+
+        // 2. Hero Fade Out / Transition (70% to 100% scroll)
+        // We move the group away and fade it
+        const fadeValue = 1 - THREE.MathUtils.smoothstep(scroll, FADE_START, FADE_END)
+
+        // Move downward slightly as we fade out
+        const targetY = lerp(0, -5, THREE.MathUtils.smoothstep(scroll, FADE_START, FADE_END))
+        groupRef.current.position.y = targetY
+
+        // Subtle scale-down and position shift
+        const exitScale = lerp(1, 0.8, THREE.MathUtils.smoothstep(scroll, FADE_START, FADE_END))
+        groupRef.current.scale.setScalar(exitScale)
+
+        // Sync grid fade
+        gridRef.current.material.opacity = fadeValue
+    })
+
     return (
-        <group>
-            {/* Background & Atmosphere (similar to the screenshot's soft green hues) */}
+        <group ref={groupRef}>
+            {/* Background & Atmosphere */}
             <color attach="background" args={['#8CA090']} />
             <fog attach="fog" args={['#8CA090', 10, 30]} />
 
@@ -38,20 +70,9 @@ export default function HeroScene() {
             {/* Main Model */}
             <primitive object={scene} position={[0, -0.48, -4]} scale={1.5} />
 
-            {/* Text Overlay */}
-            <Text
-                position={[0, 0, 1.5]}
-                fontSize={0.1}
-                color="#333333"
-                anchorX="center"
-                anchorY="middle"
-                font="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZhrib2Bg-4.ttf"
-            >
-                Speculative{"\n"}Futures{"\n"}Landscape.
-            </Text>
-
             {/* Grid line ground floor */}
             <Grid
+                ref={gridRef}
                 position={[0, -2, 0]}
                 args={[100, 100]}
                 cellSize={1}
@@ -77,5 +98,5 @@ export default function HeroScene() {
     )
 }
 
-// Preload the model to prevent stutter when mounted
+// Preload the model
 useGLTF.preload('/models/helas.glb')

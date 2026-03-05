@@ -8,12 +8,11 @@
   "static/chunks/node_modules_three_examples_jsm_postprocessing_Pass_c600a609.js",
   "static/chunks/node_modules_@react-three_fiber_dist_a0fcf049._.js",
   "static/chunks/node_modules_three-stdlib_b83b4665._.js",
-  "static/chunks/node_modules_troika-three-text_dist_troika-three-text_esm_94005891.js",
   "static/chunks/node_modules_postprocessing_build_index_6ee8e3a8.js",
   "static/chunks/b6290_maath_dist_717ba500._.js",
   "static/chunks/node_modules_n8ao_dist_N8AO_b7826908.js",
-  "static/chunks/node_modules_f536618e._.js",
-  "static/chunks/src_2cda545d._.js"
+  "static/chunks/node_modules_5fda8dbb._.js",
+  "static/chunks/src_072477f5._.js"
 ],
     source: "dynamic"
 });

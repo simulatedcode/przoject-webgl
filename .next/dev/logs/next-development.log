@@ -149,3 +149,17 @@ Import traces:
 [00:46:19.077] Server  LOG     ✓ Compiled in 65ms
 [00:46:37.337] Server  LOG     ✓ Compiled in 32ms
 [01:01:36.272] Server  LOG     ✓ Compiled in 4.1s
+[01:52:17.739] Server  LOG     ✓ Compiled in 4.6s
+[01:52:41.210] Server  LOG     ✓ Finished writing to filesystem cache in 21.5s
+[01:52:41.584] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:52:43.764] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[01:54:01.970] Server  LOG     ✓ Compiled in 310ms
+[01:54:03.461] Server  LOG     ✓ Compiled in 123ms
+[01:58:22.322] Server  LOG     ✓ Compiled in 509ms
+[01:58:33.689] Server  LOG     ✓ Compiled in 2.5s
+[01:58:53.178] Server  LOG     ✓ Compiled in 432ms
+[01:58:59.786] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:59:07.189] Server  LOG     ✓ Compiled in 205ms
+[01:59:07.847] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[02:01:55.775] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:01:56.415] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
