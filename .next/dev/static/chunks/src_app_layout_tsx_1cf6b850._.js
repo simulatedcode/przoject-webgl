@@ -1,0 +1,19 @@
+(globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
+    script: typeof document === "object" ? document.currentScript : undefined,
+    chunks: [
+  "static/chunks/[root-of-the-server]__0f0ba101._.css",
+  "static/chunks/node_modules_three_build_three_core_996ef05a.js",
+  "static/chunks/node_modules_three_build_three_module_0c59ee63.js",
+  "static/chunks/node_modules_three_build_three_module_f7d46d9b.js",
+  "static/chunks/node_modules_three_examples_jsm_postprocessing_Pass_c600a609.js",
+  "static/chunks/node_modules_@react-three_fiber_dist_a0fcf049._.js",
+  "static/chunks/node_modules_three-stdlib_b83b4665._.js",
+  "static/chunks/node_modules_troika-three-text_dist_troika-three-text_esm_94005891.js",
+  "static/chunks/node_modules_postprocessing_build_index_6ee8e3a8.js",
+  "static/chunks/b6290_maath_dist_717ba500._.js",
+  "static/chunks/node_modules_n8ao_dist_N8AO_b7826908.js",
+  "static/chunks/node_modules_f536618e._.js",
+  "static/chunks/src_2cda545d._.js"
+],
+    source: "dynamic"
+});

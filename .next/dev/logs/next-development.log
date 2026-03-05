@@ -1,0 +1,151 @@
+[00:00:05.483] Server  LOG     ✓ Ready in 4.5s
+[00:00:15.028] Server  LOG     ○ Compiling / ...
+[00:00:28.916] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:29.211] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:09:32.684] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:32.815] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:09:59.214] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:59.338] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:16.991] Server  LOG     ✓ Compiled in 276ms
+[00:10:34.905] Server  LOG     ✓ Compiled in 13s
+[00:10:46.429] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:49.014] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:55.147] Server  LOG     ✓ Compiled in 1203ms
+[00:11:11.015] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:14:09.477] Server  LOG     ✓ Compiled in 563ms
+[00:14:50.813] Server  LOG     ✓ Compiled in 154ms
+[00:14:58.782] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:59.296] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:15:32.779] Server  LOG     ✓ Compiled in 168ms
+[00:17:30.687] Server  LOG     ✓ Compiled in 290ms
+[00:17:39.573] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:40.061] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:18:06.884] Server  LOG     ✓ Compiled in 50ms
+[00:18:16.795] Server  LOG     ✓ Compiled in 84ms
+[00:18:24.906] Server  LOG     ✓ Compiled in 74ms
+[00:18:30.330] Server  LOG     ✓ Compiled in 98ms
+[00:18:37.300] Server  LOG     ✓ Compiled in 82ms
+[00:18:44.223] Server  LOG     ✓ Compiled in 66ms
+[00:18:59.325] Server  LOG     ✓ Compiled in 97ms
+[00:19:26.797] Server  LOG     ✓ Compiled in 197ms
+[00:19:31.601] Server  LOG     ✓ Compiled in 68ms
+[00:19:45.203] Server  LOG     ✓ Compiled in 151ms
+[00:19:53.244] Server  LOG     ✓ Compiled in 81ms
+[00:19:58.202] Server  LOG     ✓ Compiled in 120ms
+[00:20:08.108] Server  LOG     ✓ Compiled in 92ms
+[00:20:13.676] Server  LOG     ✓ Compiled in 67ms
+[00:20:17.671] Server  LOG     ✓ Compiled in 71ms
+[00:20:25.252] Server  LOG     ✓ Compiled in 54ms
+[00:20:32.369] Server  LOG     ✓ Compiled in 98ms
+[00:20:41.778] Server  LOG     ✓ Compiled in 105ms
+[00:20:46.786] Server  LOG     ✓ Compiled in 178ms
+[00:20:52.237] Server  LOG     ✓ Compiled in 74ms
+[00:23:40.378] Server  LOG     ✓ Compiled in 123ms
+[00:24:32.175] Server  LOG     ✓ Compiled in 52ms
+[00:25:01.660] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:02.370] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:25:55.022] Server  LOG     ✓ Compiled in 790ms
+[00:26:13.907] Server  LOG     ✓ Compiled in 518ms
+[00:26:17.695] Server  LOG     ✓ Compiled in 133ms
+[00:26:48.857] Server  LOG     ✓ Compiled in 40ms
+[00:27:12.525] Server  LOG     ✓ Compiled in 37ms
+[00:27:52.080] Server  LOG     ✓ Compiled in 78ms
+[00:28:09.099] Server  LOG     ✓ Compiled in 46ms
+[00:28:23.324] Server  LOG     ✓ Compiled in 60ms
+[00:29:07.954] Server  LOG     ✓ Compiled in 258ms
+[00:29:19.806] Server  LOG     ✓ Compiled in 48ms
+[00:33:34.431] Server  LOG     ✓ Compiled in 211ms
+[00:33:47.043] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:48.481] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:34:04.918] Server  LOG     ✓ Compiled in 103ms
+[00:34:25.529] Server  LOG     ✓ Compiled in 144ms
+[00:34:42.615] Server  LOG     ✓ Compiled in 82ms
+[00:34:56.532] Server  LOG     ✓ Compiled in 92ms
+[00:35:07.820] Server  LOG     ✓ Compiled in 37ms
+[00:35:23.316] Server  LOG     ✓ Compiled in 103ms
+[00:35:30.576] Server  LOG     ✓ Compiled in 106ms
+[00:35:41.612] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:41.948] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:35:54.040] Server  LOG     ✓ Compiled in 120ms
+[00:36:30.275] Server  LOG     ✓ Compiled in 138ms
+[00:36:45.680] Server  LOG     ✓ Compiled in 232ms
+[00:37:00.263] Server  LOG     ✓ Compiled in 126ms
+[00:37:05.725] Server  LOG     ✓ Compiled in 66ms
+[00:37:10.995] Server  LOG     ✓ Compiled in 50ms
+[00:37:12.947] Server  LOG     ✓ Compiled in 111ms
+[00:37:20.040] Server  LOG     ✓ Compiled in 64ms
+[00:37:31.716] Server  LOG     ✓ Compiled in 52ms
+[00:37:42.754] Server  LOG     ✓ Compiled in 91ms
+[00:37:47.703] Server  LOG     ✓ Compiled in 173ms
+[00:37:51.055] Server  LOG     ✓ Compiled in 94ms
+[00:38:01.038] Server  LOG     ✓ Compiled in 43ms
+[00:38:12.195] Server  LOG     ✓ Compiled in 73ms
+[00:38:16.476] Server  LOG     ✓ Compiled in 35ms
+[00:38:28.920] Server  LOG     ✓ Compiled in 91ms
+[00:38:53.143] Server  LOG     ✓ Compiled in 46ms
+[00:39:04.374] Server  LOG     ✓ Compiled in 104ms
+[00:39:18.971] Server  LOG     ✓ Compiled in 71ms
+[00:39:24.574] Server  LOG     ✓ Compiled in 73ms
+[00:39:33.360] Server  LOG     ✓ Compiled in 65ms
+[00:39:40.658] Server  LOG     ✓ Compiled in 58ms
+[00:39:44.995] Server  LOG     ✓ Compiled in 77ms
+[00:39:50.881] Server  LOG     ✓ Compiled in 104ms
+[00:39:56.673] Server  LOG     ✓ Compiled in 53ms
+[00:40:35.095] Server  LOG     ✓ Compiled in 50ms
+[00:40:41.935] Server  LOG     ✓ Compiled in 880ms
+[00:40:42.452] Browser ERROR   ./src/components/webgl/scenes/HeroScene.tsx:64:17
+Parsing ecmascript source code failed
+  62 |                 sectionColor="#6F8674"
+  63 |                 fadeDistance={ }
+> 64 |                 fadeStrength={1}
+     |                 ^^^^^^^^^^^^
+  65 |             />
+  66 |
+  67 |             {/* Accurate ground shadows */}
+
+Expected '</', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/webgl/scenes/HeroScene.tsx [Client Component Browser]
+    ./src/components/webgl/Experience.tsx [Client Component Browser]
+    ./src/components/webgl/CanvasRig.tsx [Client Component Browser]
+    ./src/components/webgl/CanvasRig.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/webgl/scenes/HeroScene.tsx [Client Component SSR]
+    ./src/components/webgl/Experience.tsx [Client Component SSR]
+    ./src/components/webgl/CanvasRig.tsx [Client Component SSR]
+    ./src/components/webgl/CanvasRig.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:41:18.319] Server  LOG     ✓ Compiled in 50ms
+[00:41:31.744] Server  LOG     ✓ Compiled in 80ms
+[00:41:36.916] Server  LOG     ✓ Compiled in 80ms
+[00:41:46.234] Server  LOG     ✓ Compiled in 60ms
+[00:42:10.275] Server  LOG     ✓ Compiled in 93ms
+[00:42:18.355] Server  LOG     ✓ Compiled in 108ms
+[00:42:29.594] Server  LOG     ✓ Compiled in 58ms
+[00:43:29.272] Server  LOG     ✓ Compiled in 117ms
+[00:43:33.270] Server  LOG     ✓ Compiled in 66ms
+[00:43:40.596] Server  LOG     ✓ Compiled in 83ms
+[00:43:44.806] Server  LOG     ✓ Compiled in 69ms
+[00:43:49.626] Server  LOG     ✓ Compiled in 46ms
+[00:43:54.962] Server  LOG     ✓ Compiled in 50ms
+[00:44:01.745] Server  LOG     ✓ Compiled in 85ms
+[00:44:07.257] Server  LOG     ✓ Compiled in 58ms
+[00:44:10.950] Server  LOG     ✓ Compiled in 53ms
+[00:44:18.478] Server  LOG     ✓ Compiled in 109ms
+[00:44:23.634] Server  LOG     ✓ Compiled in 98ms
+[00:44:29.233] Server  LOG     ✓ Compiled in 111ms
+[00:44:33.444] Server  LOG     ✓ Compiled in 65ms
+[00:44:39.722] Server  LOG     ✓ Compiled in 73ms
+[00:44:46.369] Server  LOG     ✓ Compiled in 45ms
+[00:44:58.932] Server  LOG     ✓ Compiled in 61ms
+[00:45:04.503] Server  LOG     ✓ Compiled in 55ms
+[00:45:42.556] Server  LOG     ✓ Compiled in 170ms
+[00:45:54.288] Server  LOG     ✓ Compiled in 47ms
+[00:46:03.413] Server  LOG     ✓ Compiled in 64ms
+[00:46:19.077] Server  LOG     ✓ Compiled in 65ms
+[00:46:37.337] Server  LOG     ✓ Compiled in 32ms
+[01:01:36.272] Server  LOG     ✓ Compiled in 4.1s

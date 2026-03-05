@@ -1,19 +1,17 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
+import { useWebGLStore } from '../store/useWebGLStore'
 
 export function useMouse() {
-    const [mouse, setMouse] = useState({ x: 0, y: 0 })
-
     useEffect(() => {
         const handleMouseMove = (e: MouseEvent) => {
-            setMouse({
-                x: (e.clientX / window.innerWidth) * 2 - 1,
-                y: -(e.clientY / window.innerHeight) * 2 + 1,
-            })
+            // Update non-reactive store
+            useWebGLStore.getState().setMouse(
+                (e.clientX / window.innerWidth) * 2 - 1,
+                -(e.clientY / window.innerHeight) * 2 + 1
+            )
         }
 
         window.addEventListener('mousemove', handleMouseMove)
         return () => window.removeEventListener('mousemove', handleMouseMove)
     }, [])
-
-    return mouse
 }
