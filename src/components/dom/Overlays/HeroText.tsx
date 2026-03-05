@@ -2,11 +2,10 @@
 
 export default function HeroText() {
     return (
-        <div className="hero-text-container fixed inset-0 z-20 flex items-center justify-center pointer-events-none">
-            <div className="hero-text-content text-center text-white mix-blend-difference px-10">
-                <h2 className="hero-title text-sm md:text-base font-medium tracking-[0.2em] opacity-0 translate-y-5 uppercase leading-relaxed">
-                    MINIMALISM IS NOT EMPTINESS,<br />
-                    IT'S ESSENCE.
+        <div className="hero-text-container fixed inset-0 z-50 flex items-center justify-center pointer-events-none">
+            <div className="hero-text-content text-center text-white mix-blend-exclusion px-10">
+                <h2 className="hero-title text-sm md:text-base pb-12font-medium tracking-[0.2em] opacity-0 translate-y-6 uppercase leading-relaxed">
+                    SPECULATIVE FUTURES MEMORIES
                 </h2>
 
                 {/* The Final Reveal Text */}
