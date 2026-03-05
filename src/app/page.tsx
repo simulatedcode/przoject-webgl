@@ -36,8 +36,9 @@ export default function Home() {
 
     // DOM Text Choreography
     tl.to(".hero-title", { opacity: 1, y: 0, duration: 1 }, 0.2)
-      .to(".hero-subtitle", { opacity: 1, y: 0, duration: 1 }, 0.4)
-      .to(".hero-text-content", { opacity: 0, y: -50, scale: 0.9, duration: 1 }, 2.5)
+      .to(".hero-title", { opacity: 0, y: -20, duration: 0.8 }, 1.5)
+      .to(".hero-reveal-text", { opacity: 1, scale: 1.2, duration: 1.5, ease: "power4.out" }, 2.5)
+      .to(".hero-reveal-text", { letterSpacing: "1em", duration: 2 }, 2.5)
 
   }, { scope: containerRef })
 

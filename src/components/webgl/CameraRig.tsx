@@ -3,6 +3,7 @@ import { useFrame } from '@react-three/fiber'
 import { PerspectiveCamera } from '@react-three/drei'
 import * as THREE from 'three'
 import { useWebGLStore } from '../../store/useWebGLStore'
+import { lerp } from '@/lib/math'
 
 export default function CameraRig() {
     const cameraRef = useRef<THREE.PerspectiveCamera>(null)
@@ -23,12 +24,18 @@ export default function CameraRig() {
         cameraRef.current.position.y += (targetY - cameraRef.current.position.y) * 0.1
 
         // 3. Scroll Driven Camera: Move deeper into the scene as they scroll
-        // z starts at 5, moves to -10 at 100% scroll
-        const targetZ = 5 - (scrollProgress * 15)
-        cameraRef.current.position.z += (targetZ - cameraRef.current.position.z) * 0.05
+        // The model is at z = -4. To end "inside", we aim for z = -4.5
+        const targetZ = lerp(5, -3.58, scrollProgress)
+        cameraRef.current.position.z += (targetZ - cameraRef.current.position.z) * 0.1
 
-        // Look always at center
-        cameraRef.current.lookAt(0, 0, -5)
+        // 4. Dynamic FoV (Optional Zoom Effect)
+        // Narrow the fov as we get closer for a cinematic macro look
+        const targetFov = lerp(35, 20, scrollProgress)
+        cameraRef.current.fov = lerp(cameraRef.current.fov, targetFov, 0.1)
+        cameraRef.current.updateProjectionMatrix()
+
+        // Look at the model center (which is at [0, -0.48, -4])
+        cameraRef.current.lookAt(0, -0.28, -4.2)
     })
 
     return <PerspectiveCamera ref={cameraRef} makeDefault position={[0, 0, 5]} fov={35} />

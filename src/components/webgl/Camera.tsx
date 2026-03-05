@@ -2,6 +2,6 @@ import { PerspectiveCamera } from '@react-three/drei'
 
 export default function Camera() {
     return (
-        <PerspectiveCamera makeDefault position={[0, 0, 5]} fov={45} />
+        <PerspectiveCamera makeDefault position={[0, 0, 5]} fov={35} />
     )
 }

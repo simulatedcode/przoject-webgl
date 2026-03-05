@@ -28,19 +28,18 @@ export default function HeroScene() {
         // 1. Fetch scroll progress directly from the non-reactive WebGL store
         const scroll = useWebGLStore.getState().scrollProgress
 
-        // 2. Hero Fade Out / Transition (70% to 100% scroll)
-        // We move the group away and fade it
-        const fadeValue = 1 - THREE.MathUtils.smoothstep(scroll, FADE_START, FADE_END)
+        // 2. Hero Fade Out / Transition (85% to 100% scroll)
+        // We delay the exit slightly so the camera can enter the model first
+        const FADE_START_DELAYED = 0.85
+        const fadeValue = 1 - THREE.MathUtils.smoothstep(scroll, FADE_START_DELAYED, FADE_END)
 
-        // Move downward slightly as we fade out
-        const targetY = lerp(0, -5, THREE.MathUtils.smoothstep(scroll, FADE_START, FADE_END))
+        // Move downward much less to keep the camera "inside" the shell
+        const targetY = lerp(0, -1, THREE.MathUtils.smoothstep(scroll, FADE_START_DELAYED, FADE_END))
         groupRef.current.position.y = targetY
 
-        // Subtle scale-down and position shift
-        const exitScale = lerp(1, 0.8, THREE.MathUtils.smoothstep(scroll, FADE_START, FADE_END))
+        const exitScale = lerp(1, 0.95, THREE.MathUtils.smoothstep(scroll, FADE_START_DELAYED, FADE_END))
         groupRef.current.scale.setScalar(exitScale)
 
-        // Sync grid fade
         gridRef.current.material.opacity = fadeValue
     })
 

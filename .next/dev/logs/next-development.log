@@ -982,3 +982,141 @@ Import trace:
 [02:23:00.583] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [02:23:02.795] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
 [02:23:18.610] Server  LOG     ✓ Finished filesystem cache database compaction in 13.6s
+[02:31:32.695] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:31:38.242] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[02:36:08.938] Server  LOG     ✓ Compiled in 612ms
+[02:36:10.835] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:10.835] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:10.835] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:10.835] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:10.841] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:10.841] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:10.841] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:10.841] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:10.841] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:10.841] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:10.841] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:10.841] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:11.781] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:11.781] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:11.781] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:11.781] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:11.781] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:11.781] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:11.781] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:11.781] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:11.781] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:11.781] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:11.781] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:11.781] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:11.781] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.713] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:13.714] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:16.739] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:16.739] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:16.739] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:18.746] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:22.779] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:25.084] Server  LOG     ✓ Compiled in 414ms
+[02:36:30.826] Browser ERROR   uncaughtError: ReferenceError: lerp is not defined
+[02:36:35.843] Server  LOG     ✓ Compiled in 176ms
+[02:36:40.917] Server  LOG     ✓ Compiled in 355ms
+[02:36:42.694] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:36:44.095] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[02:36:54.810] Server  LOG     ✓ Compiled in 479ms
+[02:38:10.699] Server  LOG     ✓ Compiled in 152ms
+[02:38:36.534] Server  LOG     ✓ Compiled in 118ms
+[02:38:55.777] Server  LOG     ✓ Compiled in 55ms
+[02:39:19.878] Server  LOG     ✓ Compiled in 56ms
+[02:39:47.578] Server  LOG     ✓ Compiled in 280ms
+[02:39:50.436] Server  LOG     ✓ Compiled in 47ms
+[02:40:12.590] Server  LOG     ✓ Compiled in 76ms
+[02:41:50.902] Server  LOG     ✓ Compiled in 37ms
+[02:42:00.449] Server  LOG     ✓ Compiled in 57ms
+[02:42:32.443] Server  LOG     ✓ Compiled in 45ms
+[02:42:52.017] Server  LOG     ✓ Compiled in 109ms
+[02:42:56.795] Server  LOG     ✓ Compiled in 40ms
+[02:43:20.726] Server  LOG     ✓ Compiled in 64ms
+[02:43:53.327] Server  LOG     ✓ Compiled in 84ms
+[02:44:15.727] Server  LOG     ✓ Compiled in 70ms
+[02:44:20.576] Server  LOG     ✓ Compiled in 70ms
+[02:44:46.292] Server  LOG     ✓ Compiled in 116ms
+[02:45:18.694] Server  LOG     ✓ Compiled in 173ms
+[02:45:35.372] Server  LOG     ✓ Compiled in 104ms
+[02:46:15.004] Server  LOG     ✓ Compiled in 66ms
+[02:47:02.193] Server  LOG     ✓ Compiled in 99ms
+[02:47:16.330] Server  LOG     ✓ Compiled in 151ms
+[02:47:45.382] Server  LOG     ✓ Compiled in 154ms
+[02:47:53.140] Server  LOG     ✓ Compiled in 46ms
+[02:48:12.291] Server  LOG     ✓ Compiled in 92ms
+[02:48:23.992] Server  LOG     ✓ Compiled in 53ms
+[02:48:43.130] Server  LOG     ✓ Compiled in 133ms
