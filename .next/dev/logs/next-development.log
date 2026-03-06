@@ -10310,3 +10310,27 @@ Import traces:
     ./src/app/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
+[17:24:51.372] Server  LOG     ✓ Compiled in 2.5s
+[17:25:13.057] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[17:25:14.129] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[17:26:34.923] Server  LOG     ✓ Compiled in 129ms
+[17:30:11.720] Server  LOG     ✓ Compiled in 142ms
+[17:30:52.719] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[17:30:53.521] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[17:33:18.703] Server  LOG     ✓ Compiled in 529ms
+[17:33:48.249] Server  LOG     ✓ Compiled in 116ms
+[17:34:29.968] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[17:34:30.849] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[17:47:36.500] Server  LOG     ✓ Compiled in 3.3s
+[17:51:05.130] Server  LOG     ✓ Compiled in 277ms
+[17:51:06.685] Server  LOG     ✓ Compiled in 424ms
+[17:51:35.243] Server  LOG     ✓ Compiled in 1795ms
+[17:52:11.416] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[17:52:12.023] Browser WARN    GSAP target .flip-char not found. https://gsap.com
+[17:52:12.023] Browser WARN    GSAP target  not found. https://gsap.com
+[17:52:12.023] Browser WARN    GSAP target  not found. https://gsap.com
+[17:52:12.023] Browser WARN    GSAP target  not found. https://gsap.com
+[17:52:12.023] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[17:55:53.450] Server  LOG     ✓ Compiled in 469ms
+[17:57:03.985] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[17:57:04.952] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
