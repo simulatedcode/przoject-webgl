@@ -120,6 +120,8 @@
     --spacing: .25rem;
     --text-sm: .875rem;
     --text-sm--line-height: calc(1.25 / .875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --font-weight-medium: 500;
@@ -430,6 +432,10 @@
     display: grid;
   }
 
+  .inline-block {
+    display: inline-block;
+  }
+
   .h-screen {
     height: 100vh;
   }
@@ -458,6 +464,10 @@
     justify-content: center;
   }
 
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+
   .overflow-hidden {
     overflow: hidden;
   }
@@ -482,6 +492,10 @@
     padding-inline: calc(var(--spacing) * 10);
   }
 
+  .font-mono {
+    font-family: var(--font-geist-mono);
+  }
+
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -499,6 +513,11 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+
+  .tracking-\[0\.2em\] {
+    --tw-tracking: .2em;
+    letter-spacing: .2em;
   }
 
   .tracking-widest {
@@ -531,6 +550,13 @@
     --tw-blur: blur(8px);
     filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
   }
+
+  @media (min-width: 48rem) {
+    .md\:text-base {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
 }
 
 :root {
@@ -551,33 +577,25 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.hero-text-wrapper {
+  height: 200vh;
+}
+
 .hero-text-container {
-  z-index: 50;
   pointer-events: none;
+  z-index: 10;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   display: flex;
-  position: fixed;
-  inset: 0;
-}
-
-.hero-text-content {
-  text-align: center;
-  color: #fff;
-}
-
-.hero-title {
-  letter-spacing: .2em;
-  opacity: 0;
-  font-size: 2rem;
-  transform: translateY(20px);
+  position: sticky;
+  top: 0;
 }
 
 .hero-reveal-text {
+  letter-spacing: .15em;
   text-align: center;
-  letter-spacing: .1em;
-  opacity: 0;
-  font-size: clamp(1rem, 2vw, 1rem);
+  font-size: clamp(4rem, 8vw, 10rem);
   font-weight: bold;
 }
 

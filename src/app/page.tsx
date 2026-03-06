@@ -35,10 +35,63 @@ export default function Home() {
     })
 
     // DOM Text Choreography
-    tl.to(".hero-title", { opacity: 1, y: 0, duration: 1 }, 0.2)
-      .to(".hero-title", { opacity: 0, y: -20, duration: 0.8 }, 1.5)
-      .to(".hero-reveal-text", { opacity: 1, scale: 1.2, duration: 1.5, ease: "power4.out" }, 2.5)
-      .to(".hero-reveal-text", { letterSpacing: "1em", duration: 2 }, 2.5)
+
+    // 1. SCRAMBLE TEXT EFFECT
+    const scrambleTarget = containerRef.current.querySelector('.scramble-target') as HTMLElement
+    if (scrambleTarget) {
+      const targetText = scrambleTarget.dataset.text || "SPECULATIVE FUTURES MEMORIES"
+      const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!<>-_\\\\/[]{}—=+*^?#________"
+      const scrambleObj = { val: 0 }
+
+      // Initialize with gibberish
+      scrambleTarget.innerText = chars.substring(0, targetText.length)
+
+      // Fade in the wrapper while scrambling!
+      tl.to(".hero-title", { opacity: 1, y: 0, duration: 1 }, 0.2)
+
+      tl.to(scrambleObj, {
+        val: 1,
+        duration: 1.5,
+        ease: "power2.out",
+        onUpdate: () => {
+          const p = scrambleObj.val
+          const revealed = Math.floor(p * targetText.length)
+          let newText = ""
+          for (let i = 0; i < targetText.length; i++) {
+            if (i < revealed) {
+              newText += targetText[i]
+            } else {
+              newText += chars[Math.floor(Math.random() * chars.length)]
+            }
+          }
+          scrambleTarget.innerText = newText
+        }
+      }, 0.2)
+    }
+
+    // Fade out scramble text as drone drifts down
+    tl.to(".hero-title", { opacity: 0, y: -20, duration: 0.8 }, 1.5)
+
+    // 2. FLIP TEXT EFFECT
+    tl.fromTo(".flip-char",
+      {
+        opacity: 0,
+        rotateX: -90,
+        z: -50
+      },
+      {
+        opacity: 1,
+        rotateX: 0,
+        z: 0,
+        duration: 1.2,
+        stagger: 0.05,
+        ease: "back.out(1.7)"
+      },
+      2.0
+    )
+
+    // Epic letter spacing expansion at the end
+    tl.to(".hero-reveal-text", { letterSpacing: "0.25em", duration: 1.5, ease: "power2.inOut" }, 2.5)
 
   }, { scope: containerRef })
 
