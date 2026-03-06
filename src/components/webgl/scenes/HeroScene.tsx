@@ -1,6 +1,6 @@
-import { useGLTF, Environment, Grid, ContactShadows } from '@react-three/drei'
+import { useGLTF, Environment, Grid, ContactShadows, Center } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
-import { useLayoutEffect, useMemo, useRef } from 'react'
+import { useMemo, useRef } from 'react'
 import * as THREE from 'three'
 import { useWebGLStore } from '../../../store/useWebGLStore'
 import { lerp } from '../../../lib/math'
@@ -12,61 +12,31 @@ export default function HeroScene() {
     const groupRef = useRef<THREE.Group>(null)
     const gridRef = useRef<THREE.Mesh>(null)
 
-    // Clone model so we don't mutate GLTF cache
-    const model = useMemo(() => scene.clone(true), [scene])
+    // Clone model and calculate uniform scale safely
+    const { model, uniformScale } = useMemo(() => {
+        const m = scene.clone(true)
 
-    useLayoutEffect(() => {
-
-        // Reset transforms
-        model.position.set(0, 0, 0)
-        model.scale.setScalar(1)
-        model.rotation.set(0, 0, 0)
-
-        model.updateMatrixWorld(true)
-
-        // Measure bounds
-        const box = new THREE.Box3().setFromObject(model)
+        // Measure true original bounds for uniform scaling
+        m.updateMatrixWorld(true)
+        const box = new THREE.Box3().setFromObject(m)
         const size = new THREE.Vector3()
-        const center = new THREE.Vector3()
-
         box.getSize(size)
-        box.getCenter(center)
 
         // Normalize height
         const targetHeight = 3.8
-        const scale = targetHeight / size.y
-        model.scale.setScalar(scale)
+        const s = targetHeight / size.y
 
-        model.updateMatrixWorld(true)
-
-        // Recalculate box after scale
-        const scaledBox = new THREE.Box3().setFromObject(model)
-        const scaledCenter = new THREE.Vector3()
-
-        scaledBox.getCenter(scaledCenter)
-
-        // Center pivot
-        model.position.x = -scaledCenter.x
-        model.position.z = -scaledCenter.z
-
-        // Place bottom at Y=0
-        model.position.y = -scaledBox.min.y
-
-        // Enable shadows
-        model.traverse((child) => {
-
+        // Enable shadows without mutating transforms
+        m.traverse((child) => {
             if ((child as THREE.Mesh).isMesh) {
-
                 const mesh = child as THREE.Mesh
-
                 mesh.castShadow = true
                 mesh.receiveShadow = true
-
             }
-
         })
 
-    }, [model])
+        return { model: m, uniformScale: s }
+    }, [scene])
 
     useFrame(() => {
 
@@ -121,8 +91,11 @@ export default function HeroScene() {
             />
 
             {/* Sculpture */}
+            {/* Center component guarantees pivot is bottom-center, placing it perfectly on the floor */}
             <group position={[0, -2, -4]}>
-                <primitive object={model} />
+                <Center bottom>
+                    <primitive object={model} scale={uniformScale} />
+                </Center>
             </group>
 
             {/* Ground grid */}
