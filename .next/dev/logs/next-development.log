@@ -8595,3 +8595,1718 @@ Import traces:
 [17:14:10.941] Server  LOG     ✓ Compiled in 815ms
 [17:14:32.289] Server  LOG     ✓ Compiled in 167ms
 [17:14:57.801] Server  LOG     ✓ Compiled in 1012ms
+[17:16:40.377] Server  LOG     ✓ Compiled in 297ms
+[17:17:12.341] Server  LOG     ✓ Compiled in 234ms
+[17:17:53.207] Server  LOG     ✓ Compiled in 562ms
+[17:18:18.183] Server  LOG     ✓ Compiled in 178ms
+[17:18:43.004] Server  LOG     ✓ Compiled in 75ms
+[17:18:45.812] Server  LOG     ✓ Compiled in 109ms
+[17:19:00.843] Server  LOG     ✓ Compiled in 56ms
+[17:23:40.646] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:40.685] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:40.717] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:40.719] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:40.802] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:40.805] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:40.807] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:40.821] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.152] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.164] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.174] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.183] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.187] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.190] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.198] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.202] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.214] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.218] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.219] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.225] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.230] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.231] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.255] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.261] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.279] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.284] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.294] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.311] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.316] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.352] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.550] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.554] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.566] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.568] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.569] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.579] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.583] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.591] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.593] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.597] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.605] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.607] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.871] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.895] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.901] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.903] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.914] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.920] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.947] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.962] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:41.975] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:42.385] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:42.388] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:42.395] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:42.410] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:55.077] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:55.081] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:55.082] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:55.087] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:55.088] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:55.098] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:55.099] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:55.100] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:55.102] Server  ERROR   ⨯ ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[17:23:55.177] Browser ERROR   ./src/components/dom/Overlays/HeroText.tsx:4:1
+Module not found: Can't resolve './effects/FlipText'
+  2 |
+  3 | import ScrambleText from './effects/ScrambleText'
+> 4 | import FlipText from './effects/FlipText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function HeroText() {
+  7 |     return (
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[17:23:55.177] Browser ERROR   ./src/components/dom/Overlays/HeroText.tsx:3:1
+Module not found: Can't resolve './effects/ScrambleText'
+  1 | 'use client'
+  2 |
+> 3 | import ScrambleText from './effects/ScrambleText'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FlipText from './effects/FlipText'
+  5 |
+  6 | export default function HeroText() {
+
+Import traces:
+  Client Component Browser:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/dom/Overlays/HeroText.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
