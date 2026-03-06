@@ -1,42 +1,19 @@
-import { useGLTF, Environment, Grid, ContactShadows, Center } from '@react-three/drei'
+import { useGLTF, Environment, Grid, ContactShadows } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
-import { useMemo, useRef } from 'react'
+import { useRef } from 'react'
 import * as THREE from 'three'
 import { useWebGLStore } from '../../../store/useWebGLStore'
 import { lerp } from '../../../lib/math'
+import { useNormalizedModel } from '../../../hooks/useNormalizedModel'
 
 export default function HeroScene() {
 
     const { scene } = useGLTF('/models/helas.glb')
-
     const groupRef = useRef<THREE.Group>(null)
     const gridRef = useRef<THREE.Mesh>(null)
 
-    // Clone model and calculate uniform scale safely
-    const { model, uniformScale } = useMemo(() => {
-        const m = scene.clone(true)
-
-        // Measure true original bounds for uniform scaling
-        m.updateMatrixWorld(true)
-        const box = new THREE.Box3().setFromObject(m)
-        const size = new THREE.Vector3()
-        box.getSize(size)
-
-        // Normalize height
-        const targetHeight = 3.8
-        const s = targetHeight / size.y
-
-        // Enable shadows without mutating transforms
-        m.traverse((child) => {
-            if ((child as THREE.Mesh).isMesh) {
-                const mesh = child as THREE.Mesh
-                mesh.castShadow = true
-                mesh.receiveShadow = true
-            }
-        })
-
-        return { model: m, uniformScale: s }
-    }, [scene])
+    // Robustly calculate the pivot, center, and ground alignment for any GLTF model
+    const normalizedModel = useNormalizedModel(scene, 3.8)
 
     useFrame(() => {
 
@@ -91,11 +68,10 @@ export default function HeroScene() {
             />
 
             {/* Sculpture */}
-            {/* Center component guarantees pivot is bottom-center, placing it perfectly on the floor */}
-            <group position={[0, -2, -4]}>
-                <Center bottom>
-                    <primitive object={model} scale={uniformScale} />
-                </Center>
+            {/* The model's Y=0 is physically grounded, X/Z are mathematically centered.
+                We push it onto the floor (-2) and back (-4) */}
+            <group position={[0, -2, -5]}>
+                <primitive object={normalizedModel} />
             </group>
 
             {/* Ground grid */}

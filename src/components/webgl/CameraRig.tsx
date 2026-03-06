@@ -1,4 +1,4 @@
-import { useRef } from "react"
+import { useRef, useMemo } from "react"
 import { useFrame } from "@react-three/fiber"
 import { PerspectiveCamera } from "@react-three/drei"
 import * as THREE from "three"
@@ -6,100 +6,69 @@ import { useWebGLStore } from "../../store/useWebGLStore"
 
 export default function CameraRig() {
 
-    const parallaxGroupRef = useRef<THREE.Group>(null)
-    const rotationGroupRef = useRef<THREE.Group>(null)
-    const dollyGroupRef = useRef<THREE.Group>(null)
     const cameraRef = useRef<THREE.PerspectiveCamera>(null)
-
-    // Focus target
     const targetRef = useRef(new THREE.Vector3())
 
-    // Center of sculpture and ground
-    const focusPos = useRef(new THREE.Vector3(0, -0.1, -4))
+    /* -------------------------------------------------- */
+    /* CINEMATIC CAMERA PATH                              */
+    /* -------------------------------------------------- */
 
-    // Cached head position of sculpture
-    const headPos = useRef(new THREE.Vector3(0, 1.8, -4))
+    const cameraPath = useMemo(() => {
+
+        const points = [
+            new THREE.Vector3(-2, 0, -7),   // start (sky)
+            new THREE.Vector3(-2, -3, 4),  // wide drift
+            new THREE.Vector3(2, 3, 4),  // approach sculpture
+            new THREE.Vector3(0, 0, -5)   // final ground reveal
+        ]
+
+        return new THREE.CatmullRomCurve3(points)
+
+    }, [])
+
+    /* -------------------------------------------------- */
+    /* FOCUS TARGETS                                      */
+    /* -------------------------------------------------- */
+
+    const sculptureTarget = new THREE.Vector3(0, 1, -5)
+    const groundTarget = new THREE.Vector3(0, -0.2, -5)
 
     useFrame((state, delta) => {
 
-        if (
-            !parallaxGroupRef.current ||
-            !rotationGroupRef.current ||
-            !dollyGroupRef.current ||
-            !cameraRef.current
-        ) return
+        if (!cameraRef.current) return
 
-        const { scrollProgress, mouse } = useWebGLStore.getState()
-        const time = state.clock.elapsedTime
+        const { scrollProgress } = useWebGLStore.getState()
+
+        // Smooth scroll
+        const scroll = THREE.MathUtils.smoothstep(scrollProgress, 0, 1)
 
         /* -------------------------------------------------- */
-        /* 1. IDLE BREATHING                                  */
+        /* MOVE CAMERA ALONG SPLINE                           */
         /* -------------------------------------------------- */
 
-        const breathIntensity = THREE.MathUtils.lerp(1, 0.1, scrollProgress)
+        const position = cameraPath.getPoint(scroll)
 
-        const breathX = Math.sin(time * 0.5) * 0.03 * breathIntensity
-        const breathY = Math.cos(time * 0.4) * 0.03 * breathIntensity
+        cameraRef.current.position.lerp(position, 0.1)
 
         /* -------------------------------------------------- */
-        /* 2. MOUSE PARALLAX                                  */
+        /* FOCUS TARGET                                       */
         /* -------------------------------------------------- */
 
-        const clampedMouseX = THREE.MathUtils.clamp(mouse.x, -0.5, 0.5)
-        const clampedMouseY = THREE.MathUtils.clamp(mouse.y, -0.5, 0.5)
-
-        const targetParallaxX = clampedMouseX * 0.08 + breathX
-        const targetParallaxY = clampedMouseY * 0.08 + breathY
-
-        parallaxGroupRef.current.position.x = THREE.MathUtils.damp(
-            parallaxGroupRef.current.position.x,
-            targetParallaxX,
-            3,
-            delta
+        const focus = new THREE.Vector3().lerpVectors(
+            sculptureTarget,
+            groundTarget,
+            scroll
         )
 
-        parallaxGroupRef.current.position.y = THREE.MathUtils.damp(
-            parallaxGroupRef.current.position.y,
-            targetParallaxY,
-            3,
-            delta
-        )
+        targetRef.current.lerp(focus, 0.1)
+
+        cameraRef.current.lookAt(targetRef.current)
 
         /* -------------------------------------------------- */
-        /* 3. CINEMATIC ORBIT ROTATION                        */
+        /* CINEMATIC LENS                                     */
         /* -------------------------------------------------- */
 
-        const idleRotation = Math.sin(time * 0.15) * 0.02
-        const scrollRotation = scrollProgress * 0.25
-
-        const targetRotationY = idleRotation + scrollRotation
-
-        rotationGroupRef.current.rotation.y = THREE.MathUtils.damp(
-            rotationGroupRef.current.rotation.y,
-            targetRotationY,
-            2,
-            delta
-        )
-
-        /* -------------------------------------------------- */
-        /* 4. SCROLL DOLLY                                    */
-        /* -------------------------------------------------- */
-
-        // Camera starts far and enters the sculpture
-        const targetZ = THREE.MathUtils.lerp(5, -3.48, scrollProgress)
-
-        dollyGroupRef.current.position.z = THREE.MathUtils.damp(
-            dollyGroupRef.current.position.z,
-            targetZ,
-            4,
-            delta
-        )
-
-        /* -------------------------------------------------- */
-        /* 5. CINEMATIC FOV                                   */
-        /* -------------------------------------------------- */
-
-        const targetFov = THREE.MathUtils.lerp(30, 12, scrollProgress)
+        const targetFov = THREE.MathUtils.lerp(35, 18, scroll)
 
         cameraRef.current.fov = THREE.MathUtils.damp(
             cameraRef.current.fov,
@@ -110,58 +79,14 @@ export default function CameraRig() {
 
         cameraRef.current.updateProjectionMatrix()
 
-        /* -------------------------------------------------- */
-        /* 6. FOCUS TARGET                                    */
-        /* -------------------------------------------------- */
-
-        const currentTargetX = THREE.MathUtils.lerp(focusPos.current.x, headPos.current.x, scrollProgress)
-        const currentTargetY = THREE.MathUtils.lerp(focusPos.current.y, headPos.current.y, scrollProgress)
-        const currentTargetZ = THREE.MathUtils.lerp(focusPos.current.z, headPos.current.z, scrollProgress)
-
-        targetRef.current.x = THREE.MathUtils.damp(
-            targetRef.current.x,
-            currentTargetX,
-            3,
-            delta
-        )
-
-        targetRef.current.y = THREE.MathUtils.damp(
-            targetRef.current.y,
-            currentTargetY,
-            3,
-            delta
-        )
-
-        targetRef.current.z = THREE.MathUtils.damp(
-            targetRef.current.z,
-            currentTargetZ,
-            3,
-            delta
-        )
-
-        cameraRef.current.lookAt(targetRef.current)
-
     })
 
     return (
-        <group ref={parallaxGroupRef}>
-
-            {/* Layer 1: Parallax */}
-            <group ref={rotationGroupRef}>
-
-                {/* Layer 2: Rotation */}
-                <group ref={dollyGroupRef} position={[0, 0, 5]}>
-
-                    {/* Layer 3: Dolly + Camera */}
-                    <PerspectiveCamera
-                        ref={cameraRef}
-                        makeDefault
-                        position={[0, -0.2, 0]}
-                        fov={30}
-                    />
-
-                </group>
-            </group>
-        </group>
+        <PerspectiveCamera
+            ref={cameraRef}
+            makeDefault
+            position={[0, 3, 8]}
+            fov={35}
+        />
     )
 }
