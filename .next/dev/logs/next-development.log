@@ -10334,3 +10334,10 @@ https://nextjs.org/docs/messages/module-not-found
 [17:55:53.450] Server  LOG     ✓ Compiled in 469ms
 [17:57:03.985] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [17:57:04.952] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[17:58:33.188] Server  LOG     ✓ Compiled in 249ms
+[17:59:36.177] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[17:59:37.181] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[18:04:23.544] Server  LOG     ✓ Compiled in 2.5s
+[18:04:52.020] Server  LOG     ✓ Compiled in 272ms
+[18:09:51.330] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[18:09:52.208] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.

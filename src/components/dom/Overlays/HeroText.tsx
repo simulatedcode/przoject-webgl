@@ -57,6 +57,13 @@ export default function HeroText() {
         // --------------------------------------------------
         // STAGE 2: WORD REVEAL (0.4 to 0.7)
         // --------------------------------------------------
+        // Translate the whole H1 upwards
+        tl.current.fromTo(".hero-reveal-text",
+            { y: 100, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.3, ease: "power3.out" },
+            0.4
+        )
+
         // Synchronized with the camera tilting down to the ground text
         tl.current.fromTo(".word-reveal-child",
             {
@@ -100,12 +107,12 @@ export default function HeroText() {
 
                 {/* Small intro line - SCRAMBLE TEXT TARGET */}
                 <h2 className="hero-title opacity-0 translate-y-6 uppercase text-sm md:text-base tracking-[0.2em] font-mono">
-                    <ScrambleText text="SPECULATIVE FUTURES MEMORIES" />
+                    <ScrambleText text="PRZROJECT 84031300002" />
                 </h2>
 
                 {/* Main reveal text - WORD REVEAL TARGET */}
                 <h1 className="hero-reveal-text uppercase">
-                    <WordRevealText text="REVEALING THE CORE" className="justify-center" />
+                    <WordRevealText text="SPECULATIVE FUTURES MEMORIES" className="justify-center" />
                 </h1>
 
             </div>
