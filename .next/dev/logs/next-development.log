@@ -8529,3 +8529,65 @@ Import traces:
 [15:46:52.987] Server  LOG     ✓ Compiled in 342ms
 [15:46:56.717] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [15:46:57.443] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[15:48:41.016] Server  LOG     ✓ Compiled in 283ms
+[15:51:16.284] Server  LOG     ✓ Compiled in 509ms
+[15:51:29.755] Server  LOG     ✓ Compiled in 308ms
+[15:51:30.383] Browser ERROR   uncaughtError: TypeError: Text constructor: 'new' is required
+[15:51:30.383] Browser ERROR   uncaughtError: TypeError: Text constructor: 'new' is required
+[15:51:31.006] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[15:52:05.002] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[15:52:05.027] Server  LOG     ✓ Compiled in 1015ms
+[15:52:07.131] Browser ERROR   unhandledRejection: undefined
+[15:52:08.689] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[15:52:12.145] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[15:52:12.145] Browser ERROR   uncaughtError: TypeError: Text constructor: 'new' is required
+[15:52:12.145] Browser ERROR   uncaughtError: TypeError: Text constructor: 'new' is required
+[15:52:13.158] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[15:52:34.658] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[15:52:34.928] Server  LOG     ✓ Compiled in 588ms
+[15:52:38.536] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[15:52:42.238] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[15:53:54.534] Server  LOG     ✓ Compiled in 907ms
+[15:53:56.598] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[15:53:57.186] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[15:54:08.190] Server  LOG     ✓ Finished filesystem cache database compaction in 10.6s
+[15:54:10.070] Server  LOG     ✓ Finished writing to filesystem cache in 10.5s
+[15:54:21.723] Server  LOG     ✓ Compiled in 52ms
+[15:54:40.953] Server  LOG     ✓ Compiled in 91ms
+[15:55:05.817] Server  LOG     ✓ Compiled in 101ms
+[15:55:21.127] Server  LOG     ✓ Compiled in 79ms
+[15:55:34.012] Server  LOG     ✓ Compiled in 99ms
+[15:55:48.699] Server  LOG     ✓ Compiled in 66ms
+[15:55:59.137] Server  LOG     ✓ Compiled in 42ms
+[15:56:19.889] Server  LOG     ✓ Compiled in 91ms
+[15:56:28.655] Server  LOG     ✓ Compiled in 162ms
+[15:58:25.055] Server  LOG     ✓ Compiled in 2.6s
+[15:58:47.690] Server  LOG     ✓ Compiled in 831ms
+[16:00:57.914] Server  LOG     ✓ Compiled in 849ms
+[16:01:09.217] Server  LOG     ✓ Compiled in 826ms
+[16:01:49.446] Server  LOG     ✓ Compiled in 135ms
+[16:02:05.354] Server  LOG     ✓ Compiled in 76ms
+[16:02:09.447] Server  LOG     ✓ Compiled in 58ms
+[16:02:27.416] Server  LOG     ✓ Compiled in 101ms
+[16:02:40.937] Server  LOG     ✓ Compiled in 136ms
+[16:03:10.115] Server  LOG     ✓ Compiled in 72ms
+[16:03:23.369] Server  LOG     ✓ Compiled in 110ms
+[16:03:53.798] Server  LOG     ✓ Compiled in 574ms
+[16:04:17.618] Server  LOG     ✓ Compiled in 453ms
+[16:05:00.489] Server  LOG     ✓ Compiled in 823ms
+[16:05:14.685] Server  LOG     ✓ Compiled in 928ms
+[16:05:16.739] Server  LOG     ✓ Compiled in 611ms
+[16:05:42.868] Server  LOG     ✓ Compiled in 365ms
+[16:07:21.188] Server  LOG     ✓ Compiled in 369ms
+[16:07:56.630] Server  LOG     ✓ Compiled in 142ms
+[16:09:39.040] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[16:09:54.033] Server  LOG     ✓ Compiled in 364ms
+[16:10:47.018] Server  LOG     ✓ Compiled in 1027ms
+[16:11:09.129] Server  LOG     ✓ Compiled in 863ms
+[16:11:24.981] Server  LOG     ✓ Compiled in 831ms
+[16:11:49.613] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[16:13:15.416] Server  LOG     ✓ Compiled in 1816ms
+[16:13:31.358] Server  LOG     ✓ Compiled in 1454ms
+[16:14:24.700] Server  LOG     ✓ Compiled in 480ms
+[16:15:52.947] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[16:15:53.985] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.

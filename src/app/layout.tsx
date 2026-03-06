@@ -28,13 +28,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <SmoothScroll>
-          {/* HTML UI Layer */}
-          <main className="relative z-10 w-full">{children}</main>
-
           {/* WebGL Canvas Layer (Fixed to background) */}
-          <div className="fixed inset-0 z-0 pointer-events-none">
+          <div className="fixed inset-0 -z-10 pointer-events-none">
             <CanvasRig>{null}</CanvasRig>
           </div>
+
+          {/* HTML UI Layer */}
+          <main className="w-full">{children}</main>
         </SmoothScroll>
       </body>
     </html>

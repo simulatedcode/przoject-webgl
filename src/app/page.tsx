@@ -43,13 +43,13 @@ export default function Home() {
   }, { scope: containerRef })
 
   return (
-    <div ref={containerRef} className="relative w-full overflow-hidden">
+    <div ref={containerRef} className="relative w-full overflow-hidden mix-blend-difference text-white">
       {/* 
         The Hero Section being pinned.
         Inside this, we place our DOM Overlays.
       */}
       <section className="hero-section relative w-full h-screen flex flex-col justify-between p-8">
-        <div className="flex items-center justify-between text-white mix-blend-difference z-50">
+        <div className="flex items-center justify-between">
           <h1 className="text-xl font-medium uppercase tracking-widest">Przoject</h1>
           <p className="text-sm uppercase">SCROLL TO EXPLORE</p>
         </div>
@@ -57,7 +57,7 @@ export default function Home() {
         {/* The revealed text overlays */}
         <HeroText />
 
-        <div className="flex justify-between items-end text-white mix-blend-difference z-50">
+        <div className="flex justify-between items-end">
           <p className="text-[10px] opacity-50 uppercase tracking-widest">© 2026 Landscape Fiction</p>
           <p className="text-[10px] opacity-50 uppercase tracking-widest">Built with R3F + GSAP</p>
         </div>

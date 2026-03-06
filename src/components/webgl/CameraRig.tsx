@@ -16,7 +16,7 @@ export default function CameraRig() {
     const cameraPath = useMemo(() => {
 
         const points = [
-            new THREE.Vector3(-2, 0, -7),   // start (sky)
+            new THREE.Vector3(2, 0, -7),   // start (sky)
             new THREE.Vector3(-2, -3, 4),  // wide drift
             new THREE.Vector3(2, 3, 4),  // approach sculpture
             new THREE.Vector3(0, 0, -5)   // final ground reveal
