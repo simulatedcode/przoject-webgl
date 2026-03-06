@@ -1167,3 +1167,141 @@ Import trace:
 [03:39:14.250] Server  LOG     ✓ Compiled in 101ms
 [03:39:20.432] Server  LOG     ✓ Compiled in 78ms
 [03:39:55.970] Server  LOG     ✓ Compiled in 172ms
+[09:08:22.396] Server  LOG     ✓ Compiled in 1848ms
+[09:08:23.194] Browser ERROR   ./src/components/webgl/CameraRig.tsx:76:17
+Parsing ecmascript source code failed
+  74 |     return (
+  75 |         {/* Layer 1: Parallax & Breathing */ }
+> 76 |         < group ref = { parallaxGroupRef } >
+     |                 ^^^
+  77 |
+  78 |             {/* Layer 2: Scroll Depth */ }
+  79 |     {/* Initial position starts at Z=5 to match the first frame of the lerp */ }
+
+Expected ',', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/webgl/CameraRig.tsx [Client Component Browser]
+    ./src/components/webgl/Experience.tsx [Client Component Browser]
+    ./src/components/webgl/CanvasRig.tsx [Client Component Browser]
+    ./src/components/webgl/CanvasRig.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/webgl/CameraRig.tsx [Client Component SSR]
+    ./src/components/webgl/Experience.tsx [Client Component SSR]
+    ./src/components/webgl/CanvasRig.tsx [Client Component SSR]
+    ./src/components/webgl/CanvasRig.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[09:08:47.723] Server  LOG     ✓ Compiled in 843ms
+[09:08:52.173] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. {}
+[09:08:55.075] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:08:56.889] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[09:09:34.248] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:09:34.719] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[09:12:07.035] Server  LOG     ✓ Compiled in 307ms
+[09:12:16.089] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:12:16.561] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[09:13:17.420] Server  LOG     ✓ Compiled in 115ms
+[09:13:39.428] Server  LOG     ✓ Compiled in 107ms
+[09:14:04.238] Server  LOG     ✓ Compiled in 94ms
+[09:14:12.043] Server  LOG     ✓ Compiled in 60ms
+[09:14:21.824] Server  LOG     ✓ Compiled in 143ms
+[09:14:29.303] Server  LOG     ✓ Compiled in 54ms
+[09:14:36.366] Server  LOG     ✓ Compiled in 149ms
+[09:14:47.319] Server  LOG     ✓ Compiled in 52ms
+[09:15:03.738] Server  LOG     ✓ Compiled in 42ms
+[09:15:10.575] Server  LOG     ✓ Compiled in 35ms
+[09:15:24.912] Server  LOG     ✓ Compiled in 107ms
+[09:15:31.973] Server  LOG     ✓ Compiled in 186ms
+[09:15:32.553] Browser ERROR   ./src/components/webgl/CameraRig.tsx:116:31
+Parsing ecmascript source code failed
+  114 |
+  115 |         const startFocusZ = -4
+> 116 |         const endFocusZ = -4.0.8
+      |                               ^^
+  117 |
+  118 |         const targetFocusY = THREE.MathUtils.lerp(startFocusY, endFocusY, scrollProgress)
+  119 |         const targetFocusZ = THREE.MathUtils.lerp(startFocusZ, endFocusZ, scrollProgress)
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/components/webgl/CameraRig.tsx [Client Component Browser]
+    ./src/components/webgl/Experience.tsx [Client Component Browser]
+    ./src/components/webgl/CanvasRig.tsx [Client Component Browser]
+    ./src/components/webgl/CanvasRig.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/webgl/CameraRig.tsx [Client Component SSR]
+    ./src/components/webgl/Experience.tsx [Client Component SSR]
+    ./src/components/webgl/CanvasRig.tsx [Client Component SSR]
+    ./src/components/webgl/CanvasRig.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[09:15:33.658] Server  LOG     ✓ Compiled in 56ms
+[09:15:40.586] Server  LOG     ✓ Compiled in 96ms
+[09:15:48.490] Server  LOG     ✓ Compiled in 60ms
+[09:15:55.234] Server  LOG     ✓ Compiled in 72ms
+[09:16:02.463] Server  LOG     ✓ Compiled in 78ms
+[09:16:07.281] Server  LOG     ✓ Compiled in 107ms
+[09:16:29.562] Server  LOG     ✓ Compiled in 41ms
+[09:16:54.154] Server  LOG     ✓ Compiled in 45ms
+[09:17:07.267] Server  LOG     ✓ Compiled in 69ms
+[09:17:20.432] Server  LOG     ✓ Compiled in 30ms
+[09:17:30.141] Server  LOG     ✓ Compiled in 159ms
+[09:17:46.036] Server  LOG     ✓ Compiled in 67ms
+[09:18:00.981] Server  LOG     ✓ Compiled in 105ms
+[09:18:14.127] Server  LOG     ✓ Compiled in 41ms
+[09:18:23.416] Server  LOG     ✓ Compiled in 105ms
+[09:18:32.590] Server  LOG     ✓ Compiled in 32ms
+[09:18:39.176] Server  LOG     ✓ Compiled in 126ms
+[09:18:44.098] Server  LOG     ✓ Compiled in 125ms
+[09:19:10.291] Server  LOG     ✓ Compiled in 89ms
+[09:19:17.017] Server  LOG     ✓ Compiled in 76ms
+[09:19:25.219] Server  LOG     ✓ Compiled in 65ms
+[09:19:41.293] Server  LOG     ✓ Compiled in 76ms
+[09:19:48.757] Server  LOG     ✓ Compiled in 124ms
+[09:19:55.388] Server  LOG     ✓ Compiled in 44ms
+[09:20:01.113] Server  LOG     ✓ Compiled in 53ms
+[09:20:13.480] Server  LOG     ✓ Compiled in 84ms
+[09:20:24.910] Server  LOG     ✓ Compiled in 33ms
+[09:20:33.817] Server  LOG     ✓ Compiled in 93ms
+[09:20:39.429] Server  LOG     ✓ Compiled in 95ms
+[09:21:11.264] Server  LOG     ✓ Compiled in 35ms
+[09:21:15.212] Server  LOG     ✓ Compiled in 101ms
+[09:22:29.547] Server  LOG     ✓ Compiled in 76ms
+[09:22:38.643] Server  LOG     ✓ Compiled in 61ms
+[09:22:48.910] Server  LOG     ✓ Compiled in 86ms
+[09:22:59.205] Server  LOG     ✓ Compiled in 77ms
+[09:29:11.818] Server  LOG     ✓ Compiled in 1474ms
+[09:29:13.383] Server  LOG     ✓ Compiled in 126ms
+[09:29:21.133] Browser ERROR   uncaughtError: ReferenceError: useMemo is not defined
+[09:29:21.133] Browser ERROR   uncaughtError: ReferenceError: useMemo is not defined
+[09:29:21.133] Browser ERROR   uncaughtError: ReferenceError: useMemo is not defined
+[09:29:21.580] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[09:29:40.154] Server  LOG     ✓ Compiled in 195ms
+[09:29:41.715] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[09:29:48.667] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[09:29:50.603] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:29:51.089] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[09:30:47.942] Server  LOG     ✓ Compiled in 758ms
+[09:31:04.053] Server  LOG     ✓ Compiled in 265ms
+[09:31:24.413] Server  LOG     ✓ Compiled in 282ms
+[09:32:25.388] Server  LOG     ✓ Compiled in 1753ms
+[09:33:24.110] Server  LOG     ✓ Compiled in 294ms
+[09:33:26.546] Server  LOG     ✓ Compiled in 123ms
+[09:33:49.985] Server  LOG     ✓ Compiled in 61ms
+[09:34:27.083] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:34:30.761] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[09:35:31.488] Server  LOG     ✓ Compiled in 146ms
+[09:35:51.415] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:35:52.203] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[09:37:07.302] Server  LOG     ✓ Compiled in 671ms
+[09:37:44.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:37:48.582] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[09:37:56.634] Server  LOG     ✓ Compiled in 172ms
+[09:38:00.764] Browser ERROR   uncaughtError: ReferenceError: headPos is not defined
+[09:38:11.520] Server  LOG     ✓ Compiled in 156ms

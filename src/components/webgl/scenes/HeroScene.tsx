@@ -1,57 +1,111 @@
-import { useGLTF, Text, Environment, Grid, ContactShadows } from '@react-three/drei'
+import { useGLTF, Environment, Grid, ContactShadows } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
-import { useRef } from 'react'
+import { useLayoutEffect, useMemo, useRef } from 'react'
 import * as THREE from 'three'
 import { useWebGLStore } from '../../../store/useWebGLStore'
 import { lerp } from '../../../lib/math'
 
 export default function HeroScene() {
+
     const { scene } = useGLTF('/models/helas.glb')
+
     const groupRef = useRef<THREE.Group>(null)
-    const gridRef = useRef<any>(null)
+    const gridRef = useRef<THREE.Mesh>(null)
 
-    // Stage thresholds (0.0 - 1.0)
-    const FADE_START = 0.7
-    const FADE_END = 1.0
+    // Clone model so we don't mutate GLTF cache
+    const model = useMemo(() => scene.clone(true), [scene])
 
-    // Adjust material properties on the model if needed
-    scene.traverse((child) => {
-        if ((child as THREE.Mesh).isMesh) {
-            child.castShadow = true
-            child.receiveShadow = true
-        }
-    })
+    useLayoutEffect(() => {
+
+        // Reset transforms
+        model.position.set(0, 0, 0)
+        model.scale.setScalar(1)
+        model.rotation.set(0, 0, 0)
+
+        model.updateMatrixWorld(true)
+
+        // Measure bounds
+        const box = new THREE.Box3().setFromObject(model)
+        const size = new THREE.Vector3()
+        const center = new THREE.Vector3()
+
+        box.getSize(size)
+        box.getCenter(center)
+
+        // Normalize height
+        const targetHeight = 3.8
+        const scale = targetHeight / size.y
+        model.scale.setScalar(scale)
+
+        model.updateMatrixWorld(true)
+
+        // Recalculate box after scale
+        const scaledBox = new THREE.Box3().setFromObject(model)
+        const scaledCenter = new THREE.Vector3()
+
+        scaledBox.getCenter(scaledCenter)
+
+        // Center pivot
+        model.position.x = -scaledCenter.x
+        model.position.z = -scaledCenter.z
+
+        // Place bottom at Y=0
+        model.position.y = -scaledBox.min.y
+
+        // Enable shadows
+        model.traverse((child) => {
+
+            if ((child as THREE.Mesh).isMesh) {
+
+                const mesh = child as THREE.Mesh
+
+                mesh.castShadow = true
+                mesh.receiveShadow = true
+
+            }
+
+        })
+
+    }, [model])
 
     useFrame(() => {
+
         if (!groupRef.current || !gridRef.current) return
 
-        // 1. Fetch scroll progress directly from the non-reactive WebGL store
         const scroll = useWebGLStore.getState().scrollProgress
 
-        // 2. Hero Fade Out / Transition (85% to 100% scroll)
-        // We delay the exit slightly so the camera can enter the model first
-        const FADE_START_DELAYED = 0.85
-        const fadeValue = 1 - THREE.MathUtils.smoothstep(scroll, FADE_START_DELAYED, FADE_END)
+        const FADE_START = 0.85
+        const FADE_END = 1.0
 
-        // Move downward much less to keep the camera "inside" the shell
-        const targetY = lerp(0, -1, THREE.MathUtils.smoothstep(scroll, FADE_START_DELAYED, FADE_END))
+        const fadeValue = 1 - THREE.MathUtils.smoothstep(scroll, FADE_START, FADE_END)
+
+        const targetY = lerp(0, -1, THREE.MathUtils.smoothstep(scroll, FADE_START, FADE_END))
         groupRef.current.position.y = targetY
 
-        const exitScale = lerp(1, 0.95, THREE.MathUtils.smoothstep(scroll, FADE_START_DELAYED, FADE_END))
+        const exitScale = lerp(1, 0.95, THREE.MathUtils.smoothstep(scroll, FADE_START, FADE_END))
         groupRef.current.scale.setScalar(exitScale)
 
-        gridRef.current.material.opacity = fadeValue
+        const material = gridRef.current.material
+
+        if (!Array.isArray(material)) {
+            material.transparent = true
+            material.opacity = fadeValue
+        }
+
     })
 
     return (
         <group ref={groupRef}>
-            {/* Background & Atmosphere */}
+
+            {/* Atmosphere */}
             <color attach="background" args={['#8CA090']} />
             <fog attach="fog" args={['#8CA090', 10, 30]} />
 
-            {/* Cinematic Lighting */}
+            {/* Lighting */}
             <Environment preset="dawn" environmentIntensity={0.6} />
+
             <ambientLight intensity={0.4} />
+
             <directionalLight
                 position={[15, 4, 3]}
                 intensity={2.5}
@@ -66,10 +120,12 @@ export default function HeroScene() {
                 shadow-bias={-0.0001}
             />
 
-            {/* Main Model */}
-            <primitive object={scene} position={[0, -0.48, -4]} scale={1.5} />
+            {/* Sculpture */}
+            <group position={[0, -2, -4]}>
+                <primitive object={model} />
+            </group>
 
-            {/* Grid line ground floor */}
+            {/* Ground grid */}
             <Grid
                 ref={gridRef}
                 position={[0, -2, 0]}
@@ -84,7 +140,7 @@ export default function HeroScene() {
                 fadeStrength={1}
             />
 
-            {/* Accurate ground shadows */}
+            {/* Shadows */}
             <ContactShadows
                 position={[0, -1.99, 0]}
                 opacity={0.6}
@@ -93,9 +149,9 @@ export default function HeroScene() {
                 far={10}
                 resolution={1024}
             />
+
         </group>
     )
 }
 
-// Preload the model
 useGLTF.preload('/models/helas.glb')
