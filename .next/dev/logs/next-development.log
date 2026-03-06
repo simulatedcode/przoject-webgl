@@ -1305,3 +1305,19 @@ Import traces:
 [09:37:56.634] Server  LOG     ✓ Compiled in 172ms
 [09:38:00.764] Browser ERROR   uncaughtError: ReferenceError: headPos is not defined
 [09:38:11.520] Server  LOG     ✓ Compiled in 156ms
+[09:39:43.635] Server  LOG     ✓ Compiled in 201ms
+[09:40:02.555] Server  LOG     ✓ Compiled in 909ms
+[09:40:12.465] Server  LOG     ✓ Compiled in 117ms
+[09:41:34.735] Server  LOG     ✓ Compiled in 293ms
+[09:42:11.113] Server  LOG     ✓ Compiled in 179ms
+[09:42:37.208] Server  LOG     ✓ Compiled in 177ms
+[09:44:01.580] Server  LOG     ✓ Compiled in 288ms
+[09:44:17.767] Server  LOG     ✓ Compiled in 1661ms
+[09:44:40.799] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:44:41.477] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[09:45:22.520] Server  LOG     ✓ Compiled in 176ms
+[09:45:53.979] Server  LOG     ✓ Compiled in 155ms
+[09:46:06.709] Server  LOG     ✓ Compiled in 188ms
+[09:48:19.408] Server  LOG     ✓ Compiled in 1372ms
+[09:48:34.138] Server  LOG     ✓ Compiled in 433ms
+[09:48:41.623] Server  LOG     ✓ Compiled in 4.5s

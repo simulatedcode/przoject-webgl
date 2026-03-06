@@ -17,6 +17,9 @@ export default function CameraRig() {
     // Center of sculpture and ground
     const focusPos = useRef(new THREE.Vector3(0, -0.1, -4))
 
+    // Cached head position of sculpture
+    const headPos = useRef(new THREE.Vector3(0, 1.8, -4))
+
     useFrame((state, delta) => {
 
         if (
@@ -83,7 +86,7 @@ export default function CameraRig() {
         /* -------------------------------------------------- */
 
         // Camera starts far and enters the sculpture
-        const targetZ = THREE.MathUtils.lerp(5, -3.5, scrollProgress)
+        const targetZ = THREE.MathUtils.lerp(5, -3.48, scrollProgress)
 
         dollyGroupRef.current.position.z = THREE.MathUtils.damp(
             dollyGroupRef.current.position.z,
@@ -111,23 +114,27 @@ export default function CameraRig() {
         /* 6. FOCUS TARGET                                    */
         /* -------------------------------------------------- */
 
+        const currentTargetX = THREE.MathUtils.lerp(focusPos.current.x, headPos.current.x, scrollProgress)
+        const currentTargetY = THREE.MathUtils.lerp(focusPos.current.y, headPos.current.y, scrollProgress)
+        const currentTargetZ = THREE.MathUtils.lerp(focusPos.current.z, headPos.current.z, scrollProgress)
+
         targetRef.current.x = THREE.MathUtils.damp(
             targetRef.current.x,
-            focusPos.current.x,
+            currentTargetX,
             3,
             delta
         )
 
         targetRef.current.y = THREE.MathUtils.damp(
             targetRef.current.y,
-            focusPos.current.y,
+            currentTargetY,
             3,
             delta
         )
 
         targetRef.current.z = THREE.MathUtils.damp(
             targetRef.current.z,
-            focusPos.current.z,
+            currentTargetZ,
             3,
             delta
         )
@@ -149,7 +156,7 @@ export default function CameraRig() {
                     <PerspectiveCamera
                         ref={cameraRef}
                         makeDefault
-                        position={[0, 0, 0]}
+                        position={[0, -0.2, 0]}
                         fov={30}
                     />
 
