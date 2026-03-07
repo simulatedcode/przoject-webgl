@@ -66,7 +66,7 @@ export default function PrologueText() {
             className="prologue-container min-h-screen flex items-center justify-center overflow-hidden px-8"
         >
 
-            <div className="prologue-content max-w-3xl text-center">
+            <div className="prologue-content max-w-3xl text-center  ">
 
                 <h3 className="prologue-label uppercase tracking-widest text-xs mb-6">
                     Prologue

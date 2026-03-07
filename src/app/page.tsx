@@ -52,44 +52,12 @@ export default function Home() {
       <div ref={containerRef} className="master-sequence-container relative h-screen w-full overflow-hidden">
 
         <section className="hero-section absolute inset-0 flex flex-col justify-between p-8 z-10 pointer-events-none">
-
-          <div className="flex items-center justify-between">
-
-            <ScrambleText
-              text="PRZROJECT"
-              className="text-xl font-medium uppercase tracking-widest"
-            />
-
-            <WordRevealText
-              text="SCROLL TO EXPLORE"
-              className="text-[10px] uppercase"
-            />
-
-          </div>
-
           <HeroText />
-
-          <div className="flex justify-between items-end">
-
-            <WordRevealText
-              text="© 2026 Landscape Fiction"
-              className="text-[10px] opacity-50 uppercase tracking-widest"
-            />
-
-            <WordRevealText
-              text="Built with R3F + GSAP"
-              className="text-[10px] opacity-50 uppercase tracking-widest"
-            />
-
-          </div>
-
         </section>
 
         {/* Prologue sits on top in the same container, faded in by its own timeline scrub */}
         <section className="prologue-section absolute inset-0 flex items-center justify-center pointer-events-none z-20">
-
           <PrologueText />
-
         </section>
 
       </div>
