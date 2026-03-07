@@ -11,8 +11,9 @@
   "static/chunks/node_modules_postprocessing_build_index_6ee8e3a8.js",
   "static/chunks/b6290_maath_dist_717ba500._.js",
   "static/chunks/node_modules_n8ao_dist_N8AO_b7826908.js",
-  "static/chunks/node_modules_efbe95bd._.js",
-  "static/chunks/src_653e9e6c._.js"
+  "static/chunks/node_modules_gsap_7e6347a0._.js",
+  "static/chunks/node_modules_7ef9cde8._.js",
+  "static/chunks/src_bd6d3914._.js"
 ],
     source: "dynamic"
 });

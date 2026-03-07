@@ -1,8 +1,8 @@
 import { shaderMaterial } from '@react-three/drei'
 import * as THREE from 'three'
-// @ts-ignore
+// @ts-expect-error raw glsl import
 import vertex from './vertex.glsl'
-// @ts-ignore
+// @ts-expect-error raw glsl import
 import fragment from './fragment.glsl'
 
 export const CustomMaterial = shaderMaterial(

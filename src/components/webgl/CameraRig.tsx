@@ -54,11 +54,9 @@ export default function CameraRig() {
 
         const { scrollProgress } = useWebGLStore.getState()
 
-        const heroProgress = THREE.MathUtils.clamp(scrollProgress / 0.6, 0, 1)
-
         // Apply a custom easing curve to the scroll parameter itself for more dynamic temporal pacing
         // (pow 1.5 gives a slow start, fast middle, slow end feel across the spline)
-        const scroll = THREE.MathUtils.smoothstep(heroProgress, 0, 1)
+        const scroll = THREE.MathUtils.smoothstep(scrollProgress, 0, 1)
         const easedScroll = Math.pow(scroll, 1.5)
 
         /* -------------------------------------------------- */

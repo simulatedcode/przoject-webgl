@@ -1,72 +1,101 @@
 'use client'
 
-import { useEffect, useRef } from "react"
+import { useRef } from "react"
 import { useMouse } from "@/hooks/useMouse"
-import { gsap, ScrollTrigger, useGSAP } from "@/lib/gsap"
+import { gsap, useGSAP, ScrollTrigger } from "@/lib/gsap"
 import { useWebGLStore } from "@/store/useWebGLStore"
+
 import HeroText from "@/components/dom/Overlays/HeroText"
 import PrologueText from "@/components/dom/Overlays/PrologueText"
+
 import WordRevealText from "@/components/dom/effects/WordRevealText"
 import ScrambleText from "@/components/dom/effects/ScrambleText"
 
 export default function Home() {
+
   const containerRef = useRef<HTMLDivElement>(null)
 
-  // Initialize global events (mouse parallax)
+  // Mouse parallax system
   useMouse()
 
   useGSAP(() => {
+
     if (!containerRef.current) return
 
-    // Cinematic Scroll Timeline
-    const tl = gsap.timeline({
+    gsap.timeline({
       scrollTrigger: {
         trigger: containerRef.current,
         start: "top top",
-        end: "+=500%", // Extended scrolling distance for Hero + Prologue narrative
-        pin: true,     // Pin the entire hero block
-        scrub: 1,      // Smooth scrubbing
+        end: "+=500%", // 5 screen heights of scrolling sequence
+        pin: true,
+        scrub: 1,
         onUpdate: (self) => {
-          // Sync with WebGL loop
+          // Sync WebGL camera and component timelines
           useWebGLStore.getState().setScrollProgress(self.progress)
         }
       }
     })
 
+    // Force a GSAP recalculation so the pin renders properly
+    requestAnimationFrame(() => {
+      ScrollTrigger.refresh()
+    })
+
   }, { scope: containerRef })
 
+
   return (
-    <div ref={containerRef} className="absolute w-full overflow-hidden mix-blend-difference text-white">
-      {/* 
-        The Hero Section being pinned.
-        Inside this, we place our DOM Overlays.
-      */}
-      <section className="hero-section relative w-full h-screen flex flex-col justify-between p-8 z-10">
 
-        <div className="flex items-center justify-between">
-          <ScrambleText text="Przoject" className="text-xl font-medium uppercase tracking-widest" />
-          <WordRevealText text="SCROLL TO EXPLORE" className="text-[10px] uppercase" />
-        </div>
+    <div className="canvas relative w-full text-white mix-blend-difference">
 
-        {/* The revealed text overlays */}
-        <HeroText />
+      {/* SINGLE MASTER PINNED CONTAINER TO SEQUENCE EVERYTHING */}
+      <div ref={containerRef} className="master-sequence-container relative h-screen w-full overflow-hidden">
 
-        <div className="flex justify-between items-end">
-          <WordRevealText text="© 2026 Landscape Fiction" className="text-[10px] opacity-50 uppercase tracking-widest" />
-          <WordRevealText text="Built with R3F + GSAP" className="text-[10px] opacity-50 uppercase tracking-widest" />
-        </div>
-      </section>
+        <section className="hero-section absolute inset-0 flex flex-col justify-between p-8 z-10 pointer-events-none">
 
-      {/* 
-        The Prologue Section overlay (renders natively over the fixed WebGL canvas)
-      */}
-      <PrologueText />
+          <div className="flex items-center justify-between">
 
-      {/* 
-        Future Content Sections go here. 
-        ScrollTrigger pinning will create a spacer so they appear after the hero.
-      */}
-      <section className="h-screen bg-transparent pointer-events-none" />
+            <ScrambleText
+              text="PRZROJECT"
+              className="text-xl font-medium uppercase tracking-widest"
+            />
+
+            <WordRevealText
+              text="SCROLL TO EXPLORE"
+              className="text-[10px] uppercase"
+            />
+
+          </div>
+
+          <HeroText />
+
+          <div className="flex justify-between items-end">
+
+            <WordRevealText
+              text="© 2026 Landscape Fiction"
+              className="text-[10px] opacity-50 uppercase tracking-widest"
+            />
+
+            <WordRevealText
+              text="Built with R3F + GSAP"
+              className="text-[10px] opacity-50 uppercase tracking-widest"
+            />
+
+          </div>
+
+        </section>
+
+        {/* Prologue sits on top in the same container, faded in by its own timeline scrub */}
+        <section className="prologue-section absolute inset-0 flex items-center justify-center pointer-events-none z-20">
+
+          <PrologueText />
+
+        </section>
+
+      </div>
+
     </div>
+
   )
+
 }

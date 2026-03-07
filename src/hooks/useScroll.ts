@@ -1,25 +1,29 @@
 import { useEffect } from 'react'
 import Lenis from 'lenis'
 import { useWebGLStore } from '../store/useWebGLStore'
+import { gsap, ScrollTrigger } from '../lib/gsap'
 
 export function useScroll() {
     useEffect(() => {
         const lenis = new Lenis()
 
-        lenis.on('scroll', (e: any) => {
+        lenis.on('scroll', (e: Lenis) => {
+            // Force ScrollTrigger to update with Lenis
+            ScrollTrigger.update()
+
             // Update the non-reactive store instead of triggering a React re-render
             useWebGLStore.getState().setScrollProgress(e.progress)
         })
 
-        // Using gsap ticker is preferred, but raw raf is okay for now
-        function raf(time: number) {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
-        }
+        // Hook Lenis into GSAP's internal ticker for perfect sync
+        gsap.ticker.add((time) => {
+            lenis.raf(time * 1000)
+        })
 
-        requestAnimationFrame(raf)
+        gsap.ticker.lagSmoothing(0)
 
         return () => {
+            gsap.ticker.remove((time) => lenis.raf(time * 1000))
             lenis.destroy()
         }
     }, [])

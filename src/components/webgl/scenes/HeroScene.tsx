@@ -11,7 +11,6 @@ export default function HeroScene() {
     const { scene } = useGLTF('/models/helas.glb')
     const groupRef = useRef<THREE.Group>(null)
     const gridRef = useRef<THREE.Mesh>(null)
-    const textRef = useRef<any>(null)
 
     // Robustly calculate the pivot, center, and ground alignment for any GLTF model
     const normalizedModel = useNormalizedModel(scene, 3.8)
@@ -38,14 +37,6 @@ export default function HeroScene() {
         if (!Array.isArray(material)) {
             material.transparent = true
             material.opacity = fadeValue
-        }
-
-        // TEXT REVEAL: Fade in at 0.3, hold till 0.6, fade out at 0.8
-        if (textRef.current) {
-            const fadeIn = THREE.MathUtils.smoothstep(scroll, 0.3, 0.5)
-            const fadeOut = THREE.MathUtils.smoothstep(scroll, 0.6, 0.8)
-            const opacity = Math.max(0, fadeIn - fadeOut) * 0.25 // max opacity 0.25
-            textRef.current.fillOpacity = opacity
         }
 
     })
