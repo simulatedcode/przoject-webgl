@@ -5,6 +5,9 @@ import { useMouse } from "@/hooks/useMouse"
 import { gsap, ScrollTrigger, useGSAP } from "@/lib/gsap"
 import { useWebGLStore } from "@/store/useWebGLStore"
 import HeroText from "@/components/dom/Overlays/HeroText"
+import PrologueText from "@/components/dom/Overlays/PrologueText"
+import WordRevealText from "@/components/dom/effects/WordRevealText"
+import ScrambleText from "@/components/dom/effects/ScrambleText"
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -20,7 +23,7 @@ export default function Home() {
       scrollTrigger: {
         trigger: containerRef.current,
         start: "top top",
-        end: "+=300%", // Scroll for 3 screens worth of distance
+        end: "+=500%", // Extended scrolling distance for Hero + Prologue narrative
         pin: true,     // Pin the entire hero block
         scrub: 1,      // Smooth scrubbing
         onUpdate: (self) => {
@@ -33,25 +36,31 @@ export default function Home() {
   }, { scope: containerRef })
 
   return (
-    <div ref={containerRef} className="relative w-full overflow-hidden mix-blend-difference text-white">
+    <div ref={containerRef} className="absolute w-full overflow-hidden mix-blend-difference text-white">
       {/* 
         The Hero Section being pinned.
         Inside this, we place our DOM Overlays.
       */}
       <section className="hero-section relative w-full h-screen flex flex-col justify-between p-8 z-10">
+
         <div className="flex items-center justify-between">
-          <h1 className="text-xl font-medium uppercase tracking-widest">Przoject</h1>
-          <p className="text-[10px] uppercase">SCROLL TO EXPLORE</p>
+          <ScrambleText text="Przoject" className="text-xl font-medium uppercase tracking-widest" />
+          <WordRevealText text="SCROLL TO EXPLORE" className="text-[10px] uppercase" />
         </div>
 
         {/* The revealed text overlays */}
         <HeroText />
 
         <div className="flex justify-between items-end">
-          <p className="text-[10px] opacity-50 uppercase tracking-widest">© 2026 Landscape Fiction</p>
-          <p className="text-[10px] opacity-50 uppercase tracking-widest">Built with R3F + GSAP</p>
+          <WordRevealText text="© 2026 Landscape Fiction" className="text-[10px] opacity-50 uppercase tracking-widest" />
+          <WordRevealText text="Built with R3F + GSAP" className="text-[10px] opacity-50 uppercase tracking-widest" />
         </div>
       </section>
+
+      {/* 
+        The Prologue Section overlay (renders natively over the fixed WebGL canvas)
+      */}
+      <PrologueText />
 
       {/* 
         Future Content Sections go here. 

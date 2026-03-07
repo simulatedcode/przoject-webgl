@@ -52,16 +52,16 @@ export default function HeroText() {
         }
 
         // Fade out intro text
-        tl.current.to(".hero-title", { opacity: 0, y: -10, filter: "blur(8px)", duration: 0.1, ease: "power2.inOut" }, 0.3)
+        tl.current.to(".hero-title", { opacity: 0, y: -10, filter: "blur(8px)", duration: 0.05, ease: "power2.inOut" }, 0.3)
 
         // --------------------------------------------------
-        // STAGE 2: WORD REVEAL (0.4 to 0.7)
+        // STAGE 2: WORD REVEAL (squished to 0.35 - 0.5)
         // --------------------------------------------------
         // Translate the whole H1 upwards
         tl.current.fromTo(".hero-reveal-text",
             { y: 100, opacity: 0 },
-            { y: 0, opacity: 1, duration: 0.3, ease: "power3.out" },
-            0.4
+            { y: 0, opacity: 1, duration: 0.15, ease: "power3.out" },
+            0.35
         )
 
         // Synchronized with the camera tilting down to the ground text
@@ -73,22 +73,24 @@ export default function HeroText() {
             {
                 y: "0%",
                 rotateZ: 0,
-                duration: 0.2,
-                stagger: 0.05,
+                duration: 0.15,
+                stagger: 0.03,
                 ease: "power3.out"
             },
-            0.4
+            0.35
         )
 
         // --------------------------------------------------
-        // STAGE 3: EXPANSION (0.7 to 1.0)
+        // STAGE 3: EXPANSION & FADE OUT (0.5 to 0.6)
         // --------------------------------------------------
+        // Completely fade out the HeroText so Prologue can take over
         tl.current.to(".hero-reveal-text", {
             scale: 1.05,
+            opacity: 0,
             letterSpacing: "0.25em",
-            duration: 0.3,
+            duration: 0.1,
             ease: "power2.inOut"
-        }, 0.7)
+        }, 0.5)
 
     }, { scope: containerRef })
 

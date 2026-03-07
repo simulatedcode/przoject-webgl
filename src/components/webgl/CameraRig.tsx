@@ -6,7 +6,10 @@ import { useWebGLStore } from "../../store/useWebGLStore"
 
 export default function CameraRig() {
 
+    const rigRef = useRef<THREE.Group>(null)
+    const dollyRef = useRef<THREE.Group>(null)
     const cameraRef = useRef<THREE.PerspectiveCamera>(null)
+
     const targetRef = useRef(new THREE.Vector3())
 
     /* -------------------------------------------------- */
@@ -16,13 +19,16 @@ export default function CameraRig() {
     const cameraPath = useMemo(() => {
 
         const points = [
-            new THREE.Vector3(2, 0, -7),   // start (sky)
-            new THREE.Vector3(-2, -3, 4),  // wide drift
-            new THREE.Vector3(2, 3, 4),  // approach sculpture
-            new THREE.Vector3(0, 0, -5)   // final ground reveal
+            // BLADE RUNNER 2049 STYLE: 
+            // Low, monumental, creeping slowly forward with subtle lateral drift
+            new THREE.Vector3(0, 1, 4),    // 0.0: Wide, distant, very low angle tracking
+            new THREE.Vector3(0, 1, 4),  // 0.25: Creeping forward, slight rise
+            new THREE.Vector3(0, 1, 4),     // 0.5: Centering on the subject
+            new THREE.Vector3(0, 0, 0),  // 0.75: Slow drift past the side
+            new THREE.Vector3(0, 0, 4)   // 1.0: Final intimate, low-angle settle
         ]
 
-        return new THREE.CatmullRomCurve3(points)
+        return new THREE.CatmullRomCurve3(points, false, "catmullrom", 0.3) // Tighter curve tension
 
     }, [])
 
@@ -30,50 +36,80 @@ export default function CameraRig() {
     /* FOCUS TARGETS                                      */
     /* -------------------------------------------------- */
 
-    const sculptureTarget = new THREE.Vector3(0, 1, -5)
-    const groundTarget = new THREE.Vector3(0, -0.2, -5)
+    const targetPath = useMemo(() => {
+        const points = [
+            // Panning slowly down the monumental scale of the structure
+            new THREE.Vector3(0, 0, 0),   // 0.0: Looking high up at the titan
+            new THREE.Vector3(0, 0, 0),   // 0.25: Slowly panning down its chest
+            new THREE.Vector3(0, 0, 0),   // 0.5: Revealing human scale
+            new THREE.Vector3(0, 0, 0),   // 0.75: Nearing the base
+            new THREE.Vector3(0, 0, 0)    // 1.0: Resting on the ground text / feet
+        ]
+        return new THREE.CatmullRomCurve3(points, false, "catmullrom", 0.5)
+    }, [])
 
     useFrame((state, delta) => {
 
-        if (!cameraRef.current) return
+        if (!cameraRef.current || !rigRef.current) return
 
         const { scrollProgress } = useWebGLStore.getState()
 
-        // Smooth scroll
-        const scroll = THREE.MathUtils.smoothstep(scrollProgress, 0, 1)
+        const heroProgress = THREE.MathUtils.clamp(scrollProgress / 0.6, 0, 1)
+
+        // Apply a custom easing curve to the scroll parameter itself for more dynamic temporal pacing
+        // (pow 1.5 gives a slow start, fast middle, slow end feel across the spline)
+        const scroll = THREE.MathUtils.smoothstep(heroProgress, 0, 1)
+        const easedScroll = Math.pow(scroll, 1.5)
 
         /* -------------------------------------------------- */
-        /* MOVE CAMERA ALONG SPLINE                           */
+        /* MOVE RIG ALONG SPLINE                             */
         /* -------------------------------------------------- */
 
-        const position = cameraPath.getPoint(scroll)
+        const position = cameraPath.getPoint(easedScroll)
 
-        cameraRef.current.position.lerp(position, 0.1)
+        // Fluid tripod movement - heavily dampened 
+        rigRef.current.position.lerp(position, 0.05)
 
         /* -------------------------------------------------- */
-        /* FOCUS TARGET                                       */
+        /* FOCUS TARGET                                      */
         /* -------------------------------------------------- */
 
-        const focus = new THREE.Vector3().lerpVectors(
-            sculptureTarget,
-            groundTarget,
-            scroll
-        )
+        const focusTarget = targetPath.getPoint(easedScroll)
 
-        targetRef.current.lerp(focus, 0.1)
+        // Even heavier dampening on the focus creates a "dragging" cinematic lookAt
+        targetRef.current.lerp(focusTarget, 0.03)
 
         cameraRef.current.lookAt(targetRef.current)
 
         /* -------------------------------------------------- */
-        /* CINEMATIC LENS                                     */
+        /* DOLLY PUSH IN                                     */
         /* -------------------------------------------------- */
 
-        const targetFov = THREE.MathUtils.lerp(35, 18, scroll)
+        if (dollyRef.current) {
+            // Blade Runner macro push. Start tight at z=2 and push agonizingly close to z=0.5
+            const dollyTargetZ = THREE.MathUtils.lerp(2, 0.5, easedScroll)
 
+            // Heavy, slow dampening for the dolly
+            dollyRef.current.position.z = THREE.MathUtils.damp(
+                dollyRef.current.position.z,
+                dollyTargetZ,
+                1.5,
+                delta
+            )
+        }
+
+        /* -------------------------------------------------- */
+        /* CINEMATIC LENS                                    */
+        /* -------------------------------------------------- */
+
+        // Start with a tighter Anamorphic feel (28), punch in even closer on the subject (18)
+        const targetFov = THREE.MathUtils.lerp(30, 18, easedScroll)
+
+        // Heavy, smooth dampening for the lens ring
         cameraRef.current.fov = THREE.MathUtils.damp(
             cameraRef.current.fov,
             targetFov,
-            3,
+            1.5,
             delta
         )
 
@@ -82,11 +118,21 @@ export default function CameraRig() {
     })
 
     return (
-        <PerspectiveCamera
-            ref={cameraRef}
-            makeDefault
-            position={[0, 3, 8]}
-            fov={35}
-        />
+
+        <group ref={rigRef}>
+
+            <group ref={dollyRef} position={[0, 0, 2]}>
+
+                <PerspectiveCamera
+                    ref={cameraRef}
+                    makeDefault
+                    fov={35}
+                />
+
+            </group>
+
+        </group>
+
     )
+
 }
