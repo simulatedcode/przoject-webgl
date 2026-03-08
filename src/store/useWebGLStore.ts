@@ -26,7 +26,7 @@ export const useWebGLStore = create<WebGLState>((set) => ({
     mouse: { x: 0, y: 0 },
     dpr: 1,
     isLoaded: false,
-    isPreloaderDone: false,
+    isPreloaderDone: true,
 
     setScrollProgress: (progress) => set({ scrollProgress: progress }),
     setMouse: (x, y) => set({ mouse: { x, y } }),

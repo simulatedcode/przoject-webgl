@@ -3,6 +3,7 @@ import { IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import CanvasRig from "@/components/webgl/CanvasRig";
 import SmoothScroll from "@/components/dom/SmoothScroll";
+import NoSSR from "@/components/dom/NoSSR";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-sans",
@@ -32,7 +33,9 @@ export default function RootLayout({
         <SmoothScroll>
           {/* WebGL Canvas Layer (Fixed to background) */}
           <div className="fixed inset-0 -z-10 pointer-events-none">
-            <CanvasRig>{null}</CanvasRig>
+            <NoSSR>
+              <CanvasRig>{null}</CanvasRig>
+            </NoSSR>
           </div>
 
           {/* HTML UI Layer */}
