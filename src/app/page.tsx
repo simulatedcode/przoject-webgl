@@ -8,9 +8,6 @@ import { useWebGLStore } from "@/store/useWebGLStore"
 import HeroText from "@/components/dom/Overlays/HeroText"
 import PrologueText from "@/components/dom/Overlays/PrologueText"
 
-import WordRevealText from "@/components/dom/effects/WordRevealText"
-import ScrambleText from "@/components/dom/effects/ScrambleText"
-
 export default function Home() {
 
   const containerRef = useRef<HTMLDivElement>(null)

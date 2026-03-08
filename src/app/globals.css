@@ -1,111 +1,175 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ============================================================
+   TAILWIND v4 — DESIGN TOKENS
+   All tokens are available as CSS variables AND as Tailwind
+   utility classes (e.g. bg-void, text-mist, z-canvas).
+   ============================================================ */
+
+@theme {
+  /* --- Cinematic Color Palette --- */
+  --color-void: #050505;
+  --color-abyss: #0a0a0a;
+  --color-ash: #1a1a1a;
+  --color-mist: rgba(245, 245, 245, 0.85);
+  --color-ghost: rgba(255, 255, 255, 0.5);
+  --color-ember: #ff6b35;
+  --color-signal: #c8ff00;
+
+  /* --- Typography --- */
+  --font-sans: var(--font-ibm-plex-sans);
+  --font-mono: var(--font-ibm-plex-mono);
+
+  /* --- Z-Index Layers (available as z-canvas, z-overlay, etc.) --- */
+  --z-canvas: -10;
+  --z-ground: 0;
+  --z-overlay: 10;
+  --z-ui: 20;
+  --z-modal: 50;
+
+  /* --- Custom Easing (use in arbitrary: ease-[cinematic]) --- */
+  --ease-cinematic: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-entrance: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-exit: cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
+/* ============================================================
+   BASE LAYER — Document Foundation
+   Styles that apply globally across the entire app.
+   ============================================================ */
+
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Cinematic dark-first defaults. No light-mode flash. */
+    --background: var(--color-void);
+    --foreground: var(--color-mist);
   }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    /* Prevents mobile scroll bounce from showing white background */
+    background-color: var(--background);
+    scroll-behavior: auto;
+    /* Lenis handles smooth scroll, not the browser */
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Critical: prevents horizontal layout overflow from GSAP animations */
+    overflow-x: hidden;
+  }
+
+  /* 
+    NOTE: We intentionally do NOT set `canvas` styles here.
+    React Three Fiber manages its own canvas element's styles internally.
+    A global canvas reset would conflict with R3F and cause rendering
+    inconsistencies. The WebGL canvas is controlled via its wrapper div in layout.tsx.
+  */
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
+/* ============================================================
+   COMPONENT LAYER — Reusable UI Primitives
+   Custom utility classes for cinematic DOM overlays.
+   These are initial GSAP animation states — opacity: 0 is 
+   intentional as GSAP will animate them in from this state.
+   ============================================================ */
 
-.hero-text-wrapper {
-  height: 100vh;
-  /* scrolling space */
-}
+@layer components {
 
-.hero-text-container {
-  position: fixed;
-  inset: 0;
-  height: 100vh;
-  width: 100%;
+  /* ── Hero Section ────────────────────────────────────────── */
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .hero-text-container {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: var(--z-overlay);
+  }
 
-  pointer-events: none;
-  z-index: 10;
-}
+  .hero-reveal-text {
+    /* Fluid typography: 4rem at mobile → 10rem at large screens */
+    font-size: clamp(4rem, 8vw, 10rem);
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    text-align: center;
+    /* GSAP initial state — animated in by HeroText.tsx timeline */
+    opacity: 0;
+  }
 
-.hero-reveal-text {
-  font-size: clamp(4rem, 8vw, 10rem);
-  font-weight: bold;
-  letter-spacing: 0.15em;
-  text-align: center;
-}
+  /* ── Word Reveal Effect ──────────────────────────────────── */
 
-/* --- PROLOGUE SECTION --- */
+  .word-reveal-wrapper {
+    overflow: hidden;
+    display: inline-block;
+  }
 
-.prologue-container {
-  position: relative;
-  z-index: 20;
-  pointer-events: auto;
-  overflow-x: hidden;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
+  .word-reveal-child {
+    display: inline-block;
+    /* GSAP initial state — animated in from y:120% */
+    transform: translateY(120%) rotateZ(4deg);
+  }
 
-.prologue-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 48rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  text-align: center;
-  gap: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
-}
+  /* ── Prologue Section ────────────────────────────────────── */
 
-.prologue-label {
-  opacity: 0;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  letter-spacing: 0.3em;
-  font-family: var(--font-mono);
-  color: rgba(255, 255, 255, 0.5);
-}
+  .prologue-container {
+    position: relative;
+    z-index: var(--z-ui);
+    pointer-events: auto;
+    overflow-x: hidden;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
 
-.prologue-headline {
-  opacity: 0;
-  font-size: clamp(1.875rem, 4vw, 3rem);
-  font-weight: 500;
-  letter-spacing: 0.025em;
-}
+  .prologue-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 48rem;
+    padding-inline: 2.5rem;
+    text-align: center;
+    gap: 1.5rem;
+    margin-inline: auto;
+  }
 
-.prologue-paragraph {
-  opacity: 0;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: clamp(0.875rem, 2vw, 1rem);
-  max-width: 36rem;
-  line-height: 1.625;
-  margin-top: 1rem;
+  /* GSAP initial states — opacity: 0 is intentional. */
+
+  .prologue-label {
+    opacity: 0;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    font-family: var(--font-mono);
+    color: var(--color-ghost);
+  }
+
+  .prologue-headline {
+    opacity: 0;
+    font-size: clamp(1.875rem, 4vw, 3rem);
+    font-weight: 500;
+    letter-spacing: 0.025em;
+  }
+
+  .prologue-paragraph {
+    opacity: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    max-width: 36rem;
+    line-height: 1.625;
+    margin-top: 1rem;
+  }
 }
