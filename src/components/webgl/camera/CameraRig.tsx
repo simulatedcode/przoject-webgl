@@ -18,13 +18,12 @@ export default function CameraRig() {
     const cameraPath = useMemo(() => {
 
         const points = [
-            // BLADE RUNNER 2049 STYLE:
-            // Low, monumental, creeping slowly forward with subtle lateral drift
-            new THREE.Vector3(0.5, 1.0, 5.0),   // 0.0: Wide, slight left offset, low angle
-            new THREE.Vector3(0.3, 0.8, 3.8),   // 0.25: Creeping in, dropping slightly
-            new THREE.Vector3(0.0, 0.6, 2.8),   // 0.5: Centering on the subject
-            new THREE.Vector3(-0.4, 0.4, 2.0),  // 0.75: Subtle right drift, getting intimate
-            new THREE.Vector3(-0.2, 0.25, 1.5)  // 1.0: Very close, low, final settle
+            /* 0.0 - Hero Intro     */ new THREE.Vector3(0.0, 2.0, 8.0),   // High, distant, emerging from dark
+            /* 0.2 - Hero Reveal    */ new THREE.Vector3(-1.0, 1.0, 4.0),  // Dropping down, orbiting left slightly
+            /* 0.4 - Prologue       */ new THREE.Vector3(-0.5, 0.0, 2.5),  // Low-angle, close, heroic
+            /* 0.6 - Landscape      */ new THREE.Vector3(3.0, 0.5, 3.0),   // Lateral side track (parallax on grid)
+            /* 0.8 - Memory         */ new THREE.Vector3(-1.5, 1.5, 2.0),  // High angle, close orbit, introspective
+            /* 1.0 - Epilogue       */ new THREE.Vector3(0.0, 4.0, 10.0),  // High crane pull-away
         ]
 
         return new THREE.CatmullRomCurve3(points, false, "catmullrom", 0.5)
@@ -37,12 +36,12 @@ export default function CameraRig() {
 
     const targetPath = useMemo(() => {
         const points = [
-            // Slowly panning down the monumental scale of the structure
-            new THREE.Vector3(0, 1.5, -5),  // 0.0: Looking above the statue's head
-            new THREE.Vector3(0, 0.8, -5),  // 0.25: Panning down to its chest
-            new THREE.Vector3(0, 0.3, -5),  // 0.5: Stomach / torso
-            new THREE.Vector3(0, -0.2, -5), // 0.75: Revealing the base
-            new THREE.Vector3(0, -0.5, -5)  // 1.0: Resting near ground
+            /* 0.0 - Hero Intro     */ new THREE.Vector3(0, 0.5, -5),      // Center of torso
+            /* 0.2 - Hero Reveal    */ new THREE.Vector3(0, 1.0, -5),      // Upper chest/face
+            /* 0.4 - Prologue       */ new THREE.Vector3(0, 2.0, -5),      // Head (emphasizing scale)
+            /* 0.6 - Landscape      */ new THREE.Vector3(0, 0.5, -5),      // Center mass for tracking shot
+            /* 0.8 - Memory         */ new THREE.Vector3(0, 1.5, -5),      // Face/introspection
+            /* 1.0 - Epilogue       */ new THREE.Vector3(0, -2.0, -5),     // Entire monument/base
         ]
         return new THREE.CatmullRomCurve3(points, false, "catmullrom", 0.5)
     }, [])
@@ -79,20 +78,19 @@ export default function CameraRig() {
         cameraRef.current.lookAt(targetRef.current)
 
         /* -------------------------------------------------- */
-        /* DOLLY PUSH IN                                     */
+        /* MICRO-DRIFT (BREATHING)                           */
         /* -------------------------------------------------- */
 
         if (dollyRef.current) {
-            // Blade Runner macro push. Start tight at z=2 and push agonizingly close to z=0.5
-            const dollyTargetZ = THREE.MathUtils.lerp(2, 0.5, easedScroll)
+            const time = state.clock.elapsedTime
 
-            // Heavy, slow dampening for the dolly
-            dollyRef.current.position.z = THREE.MathUtils.damp(
-                dollyRef.current.position.z,
-                dollyTargetZ,
-                1.5,
-                delta
-            )
+            // Slow figure-8 breathing motion for that handheld/drone float
+            const driftX = Math.sin(time * 0.5) * 0.05
+            const driftY = Math.cos(time * 0.4) * 0.05
+
+            // Apply drift to the dolly (child layer) so it doesn't fight the rig lerp
+            dollyRef.current.position.x = THREE.MathUtils.damp(dollyRef.current.position.x, driftX, 2, delta)
+            dollyRef.current.position.y = THREE.MathUtils.damp(dollyRef.current.position.y, driftY, 2, delta)
         }
 
         /* -------------------------------------------------- */
@@ -118,7 +116,7 @@ export default function CameraRig() {
 
         <group ref={rigRef}>
 
-            <group ref={dollyRef} position={[0, 0, 2]}>
+            <group ref={dollyRef}>
 
                 <PerspectiveCamera
                     ref={cameraRef}
