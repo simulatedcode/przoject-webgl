@@ -44,18 +44,21 @@ export default function HeroScene() {
     return (
         <group ref={groupRef}>
 
-            {/* Atmosphere */}
-            <color attach="background" args={['#8CA090']} />
-            <fog attach="fog" args={['#8CA090', 10, 30]} />
+            {/* Atmosphere — void dark */}
+            <color attach="background" args={['#080808']} />
+            <fog attach="fog" args={['#080808', 8, 28]} />
 
             {/* Lighting */}
-            <Environment preset="dawn" environmentIntensity={0.6} />
+            <Environment preset="dawn" environmentIntensity={0.5} />
 
-            <ambientLight intensity={0.4} />
+            {/* Ambient fill — keeps model readable against the dark background */}
+            <ambientLight intensity={0.5} />
 
+            {/* Back glow — behind and above the statue, creates the halo silhouette */}
             <directionalLight
-                position={[15, 4, 3]}
-                intensity={2.5}
+                position={[0, 6, -10]}
+                intensity={3.5}
+                color="#c8d4ff"
                 castShadow
                 shadow-mapSize-width={2048}
                 shadow-mapSize-height={2048}
@@ -66,6 +69,12 @@ export default function HeroScene() {
                 shadow-camera-bottom={-20}
                 shadow-bias={-0.0001}
             />
+
+            {/* Rim light — cool purple volumetric glow from behind */}
+            <pointLight position={[0, 3, -8]} intensity={8} color="#6060ff" decay={2} />
+
+            {/* Subtle warm fill from the front-left — strong enough to read the model clearly */}
+            <spotLight position={[-4, 3, 3]} intensity={3.5} color="#ffe8c0" angle={0.5} penumbra={1} />
 
             {/* Sculpture */}
             {/* The model's Y=0 is physically grounded, X/Z are mathematically centered.

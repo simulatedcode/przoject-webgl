@@ -7,33 +7,52 @@ import { useWebGLStore } from "@/store/useWebGLStore"
 
 import HeroText from "@/components/dom/Overlays/HeroText"
 import PrologueText from "@/components/dom/Overlays/PrologueText"
+import ScrollHint from "@/components/dom/ScrollHint"
+import ChapterText from "@/components/dom/Overlays/ChapterText"
+import EpilogueText from "@/components/dom/Overlays/EpilogueText"
 
 export default function Home() {
-
-  const containerRef = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLElement>(null)
 
   // Mouse parallax system
   useMouse()
 
   useGSAP(() => {
-
-    if (!containerRef.current) return
-
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top top",
-        end: "+=500%", // 5 screen heights of scrolling sequence
-        pin: true,
-        scrub: 1,
-        onUpdate: (self) => {
-          // Sync WebGL camera and component timelines
-          useWebGLStore.getState().setScrollProgress(self.progress)
-        }
+    // 1. Master WebGL Scrubber
+    // Reads the entire document scroll to scrub the 3D CameraRig and SceneController
+    ScrollTrigger.create({
+      trigger: document.body,
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 1, // Smooth dampening
+      onUpdate: (self) => {
+        useWebGLStore.getState().setScrollProgress(self.progress)
       }
     })
 
-    // Force a GSAP recalculation so the pin renders properly
+    // 2. Local DOM Fades
+    // Each section animates in naturally when it enters the viewport
+    const fadeSections = gsap.utils.toArray('.anim-section')
+
+    fadeSections.forEach((sec) => {
+      gsap.fromTo(
+        sec as Element,
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: sec as Element,
+            start: "top 80%", // Trigger when top of section is at 80% viewport height
+            end: "top 30%",
+            scrub: true,
+          }
+        }
+      )
+    })
+
     requestAnimationFrame(() => {
       ScrollTrigger.refresh()
     })
@@ -42,25 +61,57 @@ export default function Home() {
 
 
   return (
+    <main ref={containerRef} className="relative z-10 w-full text-white mix-blend-difference overflow-hidden">
 
-    <div className="canvas relative w-full text-white mix-blend-difference">
+      {/* 
+        Hero is visible immediately (no .anim-section fade).
+        Fills screen, content pushed to edges.
+      */}
+      <section className="relative w-full h-screen flex flex-col justify-between p-8 md:p-12 pointer-events-none">
+        <HeroText />
+        <ScrollHint />
+      </section>
 
-      {/* SINGLE MASTER PINNED CONTAINER TO SEQUENCE EVERYTHING */}
-      <div ref={containerRef} className="master-sequence-container relative h-screen w-full overflow-hidden">
+      {/* Spacer for pacing */}
+      <div className="h-[20vh] pointer-events-none" />
 
-        <section className="hero-section absolute inset-0 flex flex-col justify-between p-8 z-10 pointer-events-none">
-          <HeroText />
-        </section>
+      {/* Prologue: Centered, philosophical pause */}
+      <section className="anim-section relative w-full min-h-screen flex items-center justify-center pointer-events-none">
+        <PrologueText />
+      </section>
 
-        {/* Prologue sits on top in the same container, faded in by its own timeline scrub */}
-        <section className="prologue-section absolute inset-0 flex items-center justify-center pointer-events-none z-20">
-          <PrologueText />
-        </section>
+      {/* Spacer for pacing */}
+      <div className="h-[50vh] pointer-events-none" />
 
-      </div>
+      {/* Chapter 1: Align Left */}
+      <section className="anim-section relative w-full h-screen flex items-center justify-start pl-8 md:pl-24 pointer-events-none">
+        <ChapterText
+          number="01"
+          title="The Architect's Folly"
+          text="They built monuments to outlast the data. Concrete and stone to hold the memory of servers long since decayed. We walk among the wreckage of their permanence."
+        />
+      </section>
 
-    </div>
+      {/* Spacer for pacing */}
+      <div className="h-[30vh] pointer-events-none" />
 
+      {/* Chapter 2: Align Right */}
+      <section className="anim-section relative w-full h-screen flex items-center justify-end pr-8 md:pr-24 pointer-events-none text-right">
+        <ChapterText
+          number="02"
+          title="Data Erosion"
+          text="Bit logic yields to weathering. The geometry fragments, leaving only wireframes where histories were once stored. A speculative grid holding nothing but silence."
+        />
+      </section>
+
+      {/* Spacer for pacing */}
+      <div className="h-[50vh] pointer-events-none" />
+
+      {/* Epilogue: Centered, final resting place */}
+      <section className="anim-section relative w-full h-screen flex items-center justify-center pb-24 pointer-events-none">
+        <EpilogueText />
+      </section>
+
+    </main>
   )
-
 }
