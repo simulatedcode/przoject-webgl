@@ -891,10 +891,6 @@
     max-width: calc(var(--spacing) * 48);
   }
 
-  .max-w-\[12rem\] {
-    max-width: 12rem;
-  }
-
   .max-w-sm {
     max-width: var(--container-sm);
   }
